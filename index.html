@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma IHSSAN - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=10">
+    <!-- Devicon for Tech Stack Logos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body class="dark-theme"> <!-- Default dark theme -->
+    <video autoplay muted loop playsinline class="hero-bg-video">
+        <source src="assets/video.mp4" type="video/mp4">
+    </video>
+
+    
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="profile-section">
+                <a href="#" class="logo">
+                    <img src="assets/logo-phoenix-blue.jpg" alt="Phoenix Logo" class="profile-logo">
+                </a>
+                <div class="nav-icons">
+                    <div class="lang-switch">
+                        <button id="lang-toggle" class="icon-btn">EN</button>
+                    </div>
+                    <div class="theme-switch">
+                        <button id="theme-toggle" class="icon-btn">
+                            <i class='bx bx-moon'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="nav-links" id="nav-menu">
+                <a href="#hero" class="nav-link" data-i18n="nav_about">About</a>
+                <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+                <a href="#techstack" class="nav-link" data-i18n="nav_techstack">Tech Stack</a>
+                <a href="#education" class="nav-link" data-i18n="nav_education">Education</a>
+                <a href="#certs" class="nav-link" data-i18n="nav_certs">Certifications</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-menu-btn icon-btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+
+                    <h1 class="title">
+                        <span class="outline-text">Salma</span>
+                        <span class="solid-text">Ihssan</span>
+                    </h1>
+                    <h2 class="subtitle" data-i18n="hero_role">Data Scientist | AI Engineer</h2>
+                    <p class="description" data-i18n="hero_desc">
+                        I am an engineering student at Centrale Lyon concurrently completing a Master's degree specialized in Artificial Intelligence. I am currently looking for a PFE internship starting March 2027. Mobility: Europe-wide.
+                    </p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+                        <a href="assets/Salma_Ihssan_CV_2026_FR.pdf" download class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 25px;">
+                            <i class='bx bx-download'></i>
+                            <span>CV (Français)</span>
+                        </a>
+                        <a href="assets/Salma_Ihssan_CV_2026_ENG.pdf" download class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 25px;">
+                            <i class='bx bx-download'></i>
+                            <span>CV (English)</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Hanging Card -->
+            <div class="hanging-moon-container">
+                <div class="moon-string"></div>
+                <div class="moon-attachments flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="social-links" style="margin-bottom: 15px;">
+                                <a href="https://linkedin.com/in/ihssan-salma" target="_blank" class="social-btn"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://github.com/Ihssan-Salma" target="_blank" class="social-btn"><i class='bx bxl-github'></i></a>
+                            </div>
+                            <a href="tel:+33745207418" class="btn btn-outline hero-phone" style="width: 100%; justify-content: center;">
+                                <i class='bx bx-phone'></i>
+                                <span>+33 7 45 20 74 18</span>
+                            </a>
+                            <a href="mailto:salma.ihssan.pro@gmail.com" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class='bx bx-envelope'></i>
+                                <span>CONTACT</span>
+                            </a>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="assets/avatar-portrait.jpg" alt="Salma Ihssan Avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-container">
+                <h2 class="section-title"><span data-i18n="section_experience">Experience</span>
+                </h2>
+                <div class="experience-grid">
+                    <!-- Experience Card 1 -->
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3 data-i18n="exp1_role">Data Scientist/ AI Engineer Intern</h3>
+                            <span class="exp-date" data-i18n="exp1_date">Summer 2026</span>
+                        </div>
+                        <div class="exp-company-group">
+                            <a href="https://www.attijariwafabank.com/fr" target="_blank" rel="noopener noreferrer" class="company-link">
+                                <img src="assets/attijariwafa-logo.jpg" alt="Attijariwafa bank logo" class="company-logo">
+                            </a>
+                            <a href="https://www.attijariwafabank.com/fr" target="_blank" rel="noopener noreferrer" class="company-link-text">
+                                <h4 class="exp-company" data-i18n="exp1_company">Attijariwafa bank - Casablanca, Morocco</h4>
+                            </a>
+                        </div>
+                        <p class="exp-desc" data-i18n="exp1_desc">Developed an AI-powered banking complaint processing system, leveraging Llama 3, LangGraph, RAG, and MCP to extract key information, assess dissatisfaction levels, determine complaint priority, and trigger automated alerts for urgent cases. Implemented PII detection and masking to ensure strict data security and compliance throughout the pipeline.</p>
+                        
+                        <div class="exp-image-wrapper">
+                            <img src="assets/architecture-diagram-v2.png" alt="System Architecture Diagram" class="exp-diagram">
+                        </div>
+                    </div>
+
+                    <!-- Experience Card 2 -->
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3 data-i18n="exp2_role">Data Analyst Intern</h3>
+                            <span class="exp-date" data-i18n="exp2_date">Summer 2025</span>
+                        </div>
+                        <div class="exp-company-group">
+                            <a href="https://www.adm.co.ma/fr" target="_blank" rel="noopener noreferrer" class="company-link">
+                                <img src="assets/autoroutes-logo.png" alt="Autoroutes du Maroc logo" class="company-logo">
+                            </a>
+                            <a href="https://www.adm.co.ma/fr" target="_blank" rel="noopener noreferrer" class="company-link-text">
+                                <h4 class="exp-company" data-i18n="exp2_company">Autoroutes du Maroc - Rabat, Morocco</h4>
+                            </a>
+                        </div>
+                        <p class="exp-desc" data-i18n="exp2_desc">Predictive traffic analysis using large-scale historical traffic data (2022-2024) to analyze congestion patterns. Modeled star schemas, written DAX measures, and designed interactive Power BI dashboards with advanced data visualizations to support strategic decision-making, while ensuring strict data confidentiality throughout.</p>
+                        
+                        <div class="exp-images-carousel">
+                            <img src="assets/autoroutes-dashboard.jpg" alt="Traffic Analysis Dashboard" class="exp-carousel-img">
+                            <img src="assets/autoroutes-presentation.jpg" alt="Traffic Analysis Presentation" class="exp-carousel-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <h2 class="section-title"><span data-i18n="section_projects">Projects</span>
+                </h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3 data-i18n="proj1_title">Emotion Detection System</h3>
+                            <p class="project-subtitle" data-i18n="proj1_subtitle">ENSAM Meknes - 2026</p>
+                            <div class="project-features">
+                                <ul>
+                                    <li><span data-i18n="proj1_feat1">Real-time facial emotion recognition system (joy, anger, surprise, etc.)</span></li>
+                                    <li><span data-i18n="proj1_feat2">Built with Convolutional Neural Networks (CNN) using PyTorch/TensorFlow and OpenCV.</span></li>
+                                    <li><span data-i18n="proj1_feat3">Trained and evaluated with (FER2013) dataset.</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-images-carousel">
+                                <img src="assets/emotion-happy.png" alt="Happy Emotion Detection" class="proj-img">
+                                <img src="assets/emotion-fear.png" alt="Fear Emotion Detection" class="proj-img">
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3 data-i18n="proj2_title">eGrading - Academic Assessment Platform</h3>
+                            <p class="project-subtitle" data-i18n="proj2_subtitle">ENSAM Meknes - 2025</p>
+                            <div class="project-features">
+                                <ul>
+                                    <li><span data-i18n="proj2_feat1">Web platform built to digitize exam grading at ENSAM.</span></li>
+                                    <li><span data-i18n="proj2_feat2">Deployed to production and successfully utilized for real academic examinations.</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-images-carousel">
+                                <img src="assets/egrading-architecture.png" alt="eGrading Architecture Diagram" class="proj-img">
+                                <img src="assets/egrading-1.jpg" alt="e-grading assignments" class="proj-img">
+                                <img src="assets/egrading-2.jpg" alt="e-grading exam structure" class="proj-img">
+                                <img src="assets/egrading-3.jpg" alt="e-grading taking exam" class="proj-img">
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">React</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="techstack" class="section">
+            <div class="section-container">
+                <div class="section-header-centered">
+                    <h2 class="section-title" data-i18n="section_techstack">Tech Stack</h2>
+                </div>
+                <div class="tech-detailed-grid">
+                    <div class="tech-category-card">
+                        <h3 class="tech-category-title">AI & Generative AI</h3>
+                        <div class="tech-icons-list">
+                            <div class="tech-badge"><i class="devicon-python-plain colored"></i> Python</div>
+                            <div class="tech-badge"><i class="devicon-tensorflow-original colored"></i> TensorFlow</div>
+                            <div class="tech-badge"><i class="devicon-pytorch-original colored"></i> PyTorch</div>
+                            <div class="tech-badge"><i class="devicon-opencv-plain colored"></i> OpenCV</div>
+                            <div class="tech-badge">LLMs</div>
+                            <div class="tech-badge">LangChain / LangGraph</div>
+                            <div class="tech-badge">RAG / MCP</div>
+                            <div class="tech-badge">Prompt Engineering</div>
+                            <div class="tech-badge">Agentic AI</div>
+                            <div class="tech-badge">Hugging Face</div>
+                            <div class="tech-badge">CNNs / RNNs / Fine-tuning</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category-card">
+                        <h3 class="tech-category-title">Data Science</h3>
+                        <div class="tech-icons-list">
+                            <div class="tech-badge"><i class="devicon-mysql-plain colored"></i> SQL</div>
+                            <div class="tech-badge"><i class="devicon-mongodb-plain colored"></i> NoSQL</div>
+                            <div class="tech-badge"><i class="devicon-pandas-original colored"></i> Pandas</div>
+                            <div class="tech-badge"><i class="devicon-numpy-original colored"></i> NumPy</div>
+                            <div class="tech-badge"><i class="bx bx-brain"></i> scikit-learn</div>
+                            <div class="tech-badge"><i class="devicon-fastapi-plain colored"></i> FastAPI</div>
+                            <div class="tech-badge">Power BI</div>
+
+                            <div class="tech-badge">Streamlit</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category-card">
+                        <h3 class="tech-category-title">Software Eng. & Cloud</h3>
+                        <div class="tech-icons-list">
+                            <div class="tech-badge"><i class="devicon-react-original colored"></i> React</div>
+                            <div class="tech-badge"><i class="devicon-spring-plain colored"></i> Spring Boot</div>
+                            <div class="tech-badge"><i class="devicon-java-plain colored"></i> Java</div>
+                            <div class="tech-badge"><i class="devicon-cplusplus-plain colored"></i> C++</div>
+                            <div class="tech-badge"><i class="devicon-docker-plain colored"></i> Docker</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category-card">
+                        <h3 class="tech-category-title">Security & Compliance</h3>
+                        <div class="tech-icons-list">
+                            <div class="tech-badge">Data Protection</div>
+                            <div class="tech-badge">Access Control</div>
+                            <div class="tech-badge">Encryption</div>
+                            <div class="tech-badge">Auth / Authorization</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category-card">
+                        <h3 class="tech-category-title">Observability & DevOps</h3>
+                        <div class="tech-icons-list">
+                            <div class="tech-badge"><i class="devicon-prometheus-original colored"></i> Prometheus</div>
+                            <div class="tech-badge"><i class="devicon-grafana-original colored"></i> Grafana</div>
+                            <div class="tech-badge"><i class="devicon-git-plain colored"></i> Git</div>
+                            <div class="tech-badge"><i class="devicon-linux-plain colored"></i> Linux</div>
+                            <div class="tech-badge">CI/CD</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category-card">
+                        <h3 class="tech-category-title">Project Management</h3>
+                        <div class="tech-icons-list">
+                            <div class="tech-badge"><i class="devicon-jira-plain colored"></i> Jira</div>
+                            <div class="tech-badge">Agile</div>
+                            <div class="tech-badge">Scrum</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-container">
+                <h2 class="section-title"><span data-i18n="section_education">Education</span>
+                </h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="edu-info">
+                                <span class="timeline-date">2026 - 2027</span>
+                                <h3 data-i18n="edu1_degree">Master's Student in Artificial Intelligence</h3>
+                                <h4 data-i18n="edu1_school">École Centrale de Lyon (ECL) - Lyon, France</h4>
+                            </div>
+                            <img src="assets/logo-eclyon.png" alt="École Centrale de Lyon Logo" class="edu-logo">
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="edu-info">
+                                <span class="timeline-date">2026 - 2027</span>
+                                <h3 data-i18n="edu2_degree">General Engineering Student - Option in Computer Science</h3>
+                                <h4 data-i18n="edu2_school">École Centrale de Lyon (ECL) - Lyon, France</h4>
+                            </div>
+                            <img src="assets/logo-eclyon.png" alt="École Centrale de Lyon Logo" class="edu-logo">
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="edu-info">
+                                <span class="timeline-date">2022 - 2026</span>
+                                <h3 data-i18n="edu3_degree">Software & Intelligent Systems Engineering Student</h3>
+                                <h4 data-i18n="edu3_school">École Nationale Supérieure d'Arts et Métiers (ENSAM) - Meknes, Morocco</h4>
+                            </div>
+                            <img src="assets/logo-ensam-fixed.png" alt="ENSAM Logo" class="edu-logo">
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="edu-info">
+                                <span class="timeline-date">2021 - 2022</span>
+                                <h3 data-i18n="edu4_degree">High School Diploma in Mathematical Sciences A</h3>
+                                <h4 data-i18n="edu4_school">High School of Excellence Mohammed VI - Benguerir, Morocco</h4>
+                            </div>
+                            <img src="assets/logo-lydex-fixed.png" alt="Lydex Logo" class="edu-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications & Languages -->
+        <section id="certs" class="section double-column">
+            <div class="section-container split">
+                <div class="left-col">
+                    <h2 class="section-title"><span data-i18n="section_certs">Certifications & Activities</span>
+                    </h2>
+                    <div class="activities-container">
+                        <div class="cert-list">
+                            <div class="cert-card">
+                                <a href="https://www.credly.com/badges/5400a7d5-89d5-49b1-a71e-8aaf54b0e48b/public_url" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
+                                    <img src="assets/linux-logo.png" alt="Linux Essentials" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0;">
+                                    <div class="cert-info">
+                                        <strong data-i18n="cert1_name">Linux Essentials</strong>
+                                        <span class="subtext" data-i18n="cert1_org">Linux Professional Institute (May 2026)</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cert-card">
+                                <a href="https://www.linkedin.com/company/gadz-it/posts/?feedView=all" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
+                                    <img src="assets/gadz_it_logo.jpg" alt="Gadz'it" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0; border-radius: 8px;">
+                                    <div class="cert-info">
+                                        <strong data-i18n="act1">Active Member, Gadz'it Computer Science Club (ENSAM).</strong>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cert-card">
+                                <a href="https://www.linkedin.com/company/social-arts-et-metiers/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
+                                    <img src="assets/social_arts_et_mtiers_logo.jpg" alt="Social Arts et Métiers" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0; border-radius: 8px;">
+                                    <div class="cert-info">
+                                        <strong data-i18n="act2">Active Member, Social Club (ENSAM).</strong>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cert-card">
+                                <a href="https://www.linkedin.com/company/club-robotique-et-innovation-arts-et-metiers/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
+                                    <img src="assets/logo_Robotique.jpg" alt="CRI" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0; border-radius: 8px;">
+                                    <div class="cert-info">
+                                        <strong data-i18n="act3">Participant, Ramadan AI 2026 (Ministry of Digital Transition).</strong>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="right-col">
+                    <h2 class="section-title"><span data-i18n="section_languages">Languages</span>
+                    </h2>
+                    <div class="lang-container">
+                        <div class="lang-item">
+                            <div class="lang-header">
+                                <strong data-i18n="lang_en">English</strong>
+                                <span class="subtext" data-i18n="lang_written_spoken">Written & Spoken</span>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang-header">
+                                <strong data-i18n="lang_fr">French</strong>
+                                <span class="subtext" data-i18n="lang_written_spoken">Written & Spoken</span>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang-header">
+                                <strong data-i18n="lang_ar">Arabic</strong>
+                                <span class="subtext" data-i18n="lang_native">Native</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title" style="margin-top: 50px;"><span data-i18n="section_softskills">Soft Skills</span>
+                    </h2>
+                    <div class="soft-skills-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="tech-badge" style="font-size: 1rem; padding: 10px 20px;">Collaborative</span>
+                        <span class="tech-badge" style="font-size: 1rem; padding: 10px 20px;">Autonomous</span>
+                        <span class="tech-badge" style="font-size: 1rem; padding: 10px 20px;">Analytical Thinking</span>
+                        <span class="tech-badge" style="font-size: 1rem; padding: 10px 20px;">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p data-i18n="footer_text">Â© 2026 Salma IHSSAN. Designed with precision.</p>
+    </footer>
+
+    <script src="js/translations.js?v=2"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
