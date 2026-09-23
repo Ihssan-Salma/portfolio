@@ -10,7 +10,7 @@ const translations = {
         
         hero_greeting: "Good evening —",
         hero_role: "Data Scientist | AI Engineer",
-        hero_desc: "I am an engineering student at Centrale Lyon concurrently completing a Master's degree specialized in Artificial Intelligence. I am currently looking for a PFE internship starting March 2027. Mobility: Europe-wide.",
+        hero_desc: "I am an engineering student at Centrale Lyon concurrently completing a Master's degree specialized in Artificial Intelligence. I am currently looking for a PFE internship starting April 2027. Mobility: Europe-wide.",
         btn_resume: "CONTACT",
         
         section_experience: "Experience",
@@ -53,7 +53,8 @@ const translations = {
         cert1_org: "Linux Professional Institute (May 2026)",
         act1: "Active Member, Gadz'it Computer Science Club (ENSAM).",
         act2: "Active Member, Social Club (ENSAM).",
-        act3: "Participant, Ramadan AI 2026 (Ministry of Digital Transition).",
+        act3: "Active Member, ENSAM Robotics Club (CRI).",
+        act4: "Participant, Ramadan AI Hackathon 2026 (Ministry of Digital Transition).",
 
         section_softskills: "Soft Skills",
         softskills_text: "Collaborative - Autonomous - Analytical and Critical Thinking - Problem-solving",
@@ -78,7 +79,7 @@ const translations = {
         
         hero_greeting: "Bonsoir —",
         hero_role: "Data Scientist | Ingénieure IA",
-        hero_desc: "Je suis élève ingénieure à Centrale Lyon et j’effectue en parallèle un Master 2 spécialisé en Intelligence Artificielle. Je suis actuellement à la recherche d’un stage de fin d’études à partir de Mars 2027. Mobilité : Europe entière.",
+        hero_desc: "Je suis élève ingénieure à Centrale Lyon et j’effectue en parallèle un Master 2 spécialisé en Intelligence Artificielle. Je suis actuellement à la recherche d’un stage de fin d’études à partir d'Avril 2027. Mobilité : Europe entière.",
         btn_resume: "CONTACT",
         
         section_experience: "Expérience",
@@ -121,7 +122,8 @@ const translations = {
         cert1_org: "Linux Professional Institute (Mai 2026)",
         act1: "Membre Actif, Club d'Informatique Gadz'it (ENSAM).",
         act2: "Membre Actif, Club Social (ENSAM).",
-        act3: "Participante, Ramadan AI 2026 (Ministère de la Transition Numérique).",
+        act3: "Membre Actif, Club Robotique de l'ENSAM (CRI).",
+        act4: "Participante, Ramadan IA Hackathon 2026 (Ministère de la Transition Numérique).",
 
         section_softskills: "Soft Skills",
         softskills_text: "Collaboratif - Autonome - Esprit Analytique et Critique - Résolution de problèmes",
