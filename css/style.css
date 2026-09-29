@@ -328,9 +328,6 @@ body.dark-theme .icon-btn {
 
 
 .static-profile-card {
-    position: absolute;
-    top: 0;
-    left: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,9 +376,10 @@ body.dark-theme .icon-btn {
     padding: 0 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 60px;
     position: relative;
     min-height: 400px;
-    padding-left: 260px; /* make room for the hanging card on the left */
 }
 
 .hero-content {
@@ -1003,10 +1001,10 @@ body.dark-theme .double-column {
         font-size: 4rem;
     }
     .hero-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         gap: 40px;
-        padding-left: 20px; /* Override the 260px desktop padding */
+        padding-left: 20px;
         padding-right: 20px;
     }
     .hero-buttons {
@@ -1019,8 +1017,6 @@ body.dark-theme .double-column {
         grid-template-columns: 1fr;
     }
     .static-profile-card {
-        position: relative;
-        left: 0;
         margin: 20px auto 40px auto;
         width: 300px;
     }
