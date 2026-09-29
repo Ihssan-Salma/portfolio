@@ -14,7 +14,7 @@ const translations = {
         btn_resume: "CONTACT",
         
         section_experience: "Experience",
-        exp1_role: "Data Scientist/ AI Engineer Intern",
+        exp1_role: "AI Engineer Intern",
         exp1_date: "Summer 2026",
         exp1_company: "Attijariwafa bank – Casablanca, Morocco",
         exp1_desc: "Developed an AI-powered banking complaint processing system, leveraging Llama 3, LangGraph, RAG, and MCP to extract key information, assess dissatisfaction levels, determine complaint priority, and trigger automated alerts for urgent cases. Implemented PII detection and masking to ensure strict data security and compliance throughout the pipeline.",
@@ -83,7 +83,7 @@ const translations = {
         btn_resume: "CONTACT",
         
         section_experience: "Expérience",
-        exp1_role: "Stagiaire Data Scientist / Ingénieure IA",
+        exp1_role: "Stagiaire Ingénieure IA",
         exp1_date: "Été 2026",
         exp1_company: "Attijariwafa bank – Casablanca, Maroc",
         exp1_desc: "Travail sur un système bancaire de traitement des réclamations basé sur l'IA, en utilisant Llama 3, LangGraph, RAG et MCP pour extraire des informations, évaluer l'insatisfaction et la sensibilité, déterminer la priorité des réclamations et déclencher des alertes pour les cas urgents. Implémentation de la détection et du masquage des PII pour assurer la sécurité des données.",
