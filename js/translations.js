@@ -9,7 +9,7 @@ const translations = {
         btn_get_in_touch: "CONTACT",
         
         hero_greeting: "Good evening —",
-        hero_role: "Data and AI Engineer",
+        hero_role: "3rd-Year Data and AI Engineering Student",
         hero_desc: "I am a double-degree student pursuing an Engineering Degree in Computer Science at Arts et Métiers Meknès, Morocco, and a Master’s 2 degree specialized in Artificial Intelligence at Centrale Lyon. I am currently studying at Centrale Lyon and looking for a <span style=\"color: var(--primary-color); font-weight: 600;\">PFE internship starting in April 2027. Mobility: Europe-wide.</span>",
         btn_resume: "CONTACT",
         
@@ -78,7 +78,7 @@ const translations = {
         btn_get_in_touch: "CONTACTEZ-MOI",
         
         hero_greeting: "Bonsoir —",
-        hero_role: "Ingénieure Data et IA",
+        hero_role: "Élève ingénieure en 3ème année Data et IA",
         hero_desc: "Je suis une étudiante en double diplôme, en formation d’ingénieure en Informatique à Arts et Métiers Meknès, au Maroc, et en Master 2 spécialisé en Intelligence Artificielle à Centrale Lyon. Je suis actuellement à Centrale Lyon et à la recherche d’un <span style=\"color: var(--primary-color); font-weight: 600;\">stage de fin d’études (PFE) à partir d’avril 2027. Mobilité : Europe.</span>",
         btn_resume: "CONTACT",
         
