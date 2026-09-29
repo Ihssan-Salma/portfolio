@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
                 // If it's an input placeholder, we handle it differently (though we don't have inputs yet)
-                el.textContent = translations[lang][key];
+                el.innerHTML = translations[lang][key];
             }
         });
     }
