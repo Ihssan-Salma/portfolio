@@ -10,7 +10,7 @@ const translations = {
         
         hero_greeting: "Good evening —",
         hero_role: "Data and AI Engineer",
-        hero_desc: "I am a double-degree student pursuing an Engineering Degree in Computer Science at Arts et Métiers Meknès, Morocco, and a Master’s 2 degree specialized in Artificial Intelligence at Centrale Lyon. I am currently studying at Centrale Lyon and looking for a PFE internship starting in April 2027. Mobility: Europe-wide.",
+        hero_desc: "I am a double-degree student pursuing an Engineering Degree in Computer Science at Arts et Métiers Meknès, Morocco, and a Master’s 2 degree specialized in Artificial Intelligence at Centrale Lyon. I am currently studying at Centrale Lyon and looking for a <span style=\"color: var(--primary-color); font-weight: 600;\">PFE internship starting in April 2027. Mobility: Europe-wide.</span>",
         btn_resume: "CONTACT",
         
         section_experience: "Experience",
@@ -79,7 +79,7 @@ const translations = {
         
         hero_greeting: "Bonsoir —",
         hero_role: "Ingénieure Data et IA",
-        hero_desc: "Je suis étudiante en double diplôme, préparant un diplôme d'ingénieur en Informatique aux Arts et Métiers de Meknès, au Maroc, et un Master 2 spécialisé en Intelligence Artificielle à Centrale Lyon. J'étudie actuellement à Centrale Lyon et suis à la recherche d'un stage de fin d'études (PFE) à partir d'Avril 2027. Mobilité : Europe entière.",
+        hero_desc: "Je suis étudiante en double diplôme, préparant un diplôme d'ingénieur en Informatique aux Arts et Métiers de Meknès, au Maroc, et un Master 2 spécialisé en Intelligence Artificielle à Centrale Lyon. J'étudie actuellement à Centrale Lyon et suis à la recherche d'un <span style=\"color: var(--primary-color); font-weight: 600;\">stage de fin d'études (PFE) à partir d'Avril 2027. Mobilité : Europe entière.</span>",
         btn_resume: "CONTACT",
         
         section_experience: "Expérience",
