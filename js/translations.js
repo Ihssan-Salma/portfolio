@@ -79,7 +79,7 @@ const translations = {
         
         hero_greeting: "Bonsoir —",
         hero_role: "Ingénieure Data et IA",
-        hero_desc: "Je suis étudiante en double diplôme, préparant un diplôme d'ingénieur en Informatique aux Arts et Métiers de Meknès, au Maroc, et un Master 2 spécialisé en Intelligence Artificielle à Centrale Lyon. J'étudie actuellement à Centrale Lyon et suis à la recherche d'un <span style=\"color: var(--primary-color); font-weight: 600;\">stage de fin d'études (PFE) à partir d'Avril 2027. Mobilité : Europe entière.</span>",
+        hero_desc: "Je suis une étudiante en double diplôme, en formation d’ingénieure en Informatique à Arts et Métiers Meknès, au Maroc, et en Master 2 spécialisé en Intelligence Artificielle à Centrale Lyon. Je suis actuellement à Centrale Lyon et à la recherche d’un <span style=\"color: var(--primary-color); font-weight: 600;\">stage de fin d’études (PFE) à partir d’avril 2027. Mobilité : Europe.</span>",
         btn_resume: "CONTACT",
         
         section_experience: "Expérience",
