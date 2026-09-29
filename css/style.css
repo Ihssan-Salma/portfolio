@@ -6,12 +6,12 @@
     --bg-color: #f0f8ff; /* Alice Blue */
     --text-color: #0b132b; /* Deep Dark Blue */
     --text-muted: #3a506b;
-    --primary-color: #00d4ff; /* Vibrant Azure/Cyan */
-    --primary-rgb: 0, 212, 255;
+    --primary-color: #0284c7; /* Sky Blue 600 */
+    --primary-rgb: 2, 132, 199;
     --card-bg: rgba(255, 255, 255, 0.7);
-    --card-border: rgba(0, 212, 255, 0.3);
+    --card-border: rgba(2, 132, 199, 0.3);
     --nav-bg: rgba(240, 248, 255, 0.9);
-    --outline-text-color: rgba(0, 212, 255, 0.1);
+    --outline-text-color: rgba(2, 132, 199, 0.1);
     --accent-gradient: linear-gradient(135deg, #0056ff, #00d4ff);
     --timeline-color: #89c2d9;
 }
@@ -20,12 +20,12 @@ body.dark-theme {
     --bg-color: #090f1d; /* Space Blue */
     --text-color: #e0fbfc;
     --text-muted: #98c1d9;
-    --primary-color: #00d4ff; 
-    --primary-rgb: 0, 212, 255;
+    --primary-color: #0ea5e9; 
+    --primary-rgb: 14, 165, 233;
     --card-bg: rgba(9, 15, 29, 0.7);
-    --card-border: rgba(0, 212, 255, 0.2);
+    --card-border: rgba(14, 165, 233, 0.2);
     --nav-bg: rgba(9, 15, 29, 0.9);
-    --outline-text-color: rgba(0, 212, 255, 0.15);
+    --outline-text-color: rgba(14, 165, 233, 0.15);
     --accent-gradient: linear-gradient(135deg, #0056ff, #00d4ff);
     --timeline-color: #293241;
 }
