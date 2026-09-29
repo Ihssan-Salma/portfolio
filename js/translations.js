@@ -63,7 +63,7 @@ const translations = {
         lang_en: "English",
         lang_fr: "French",
         lang_ar: "Arabic",
-        lang_written_spoken: "Written & Spoken",
+        lang_written_spoken: "C1",
         lang_native: "Native",
         
         footer_text: "© 2026 Salma IHSSAN. Designed with precision."
@@ -132,7 +132,7 @@ const translations = {
         lang_en: "Anglais",
         lang_fr: "Français",
         lang_ar: "Arabe",
-        lang_written_spoken: "Écrit et Parlé",
+        lang_written_spoken: "C1",
         lang_native: "Langue maternelle",
         
         footer_text: "© 2026 Salma IHSSAN. Conçu avec précision."
