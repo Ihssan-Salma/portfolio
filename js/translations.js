@@ -9,7 +9,7 @@ const translations = {
         btn_get_in_touch: "CONTACT",
         
         hero_greeting: "Good evening —",
-        hero_role: "Data Scientist | AI Engineer",
+        hero_role: "Data and AI Engineer",
         hero_desc: "I am an engineering student at Centrale Lyon concurrently completing a Master's degree specialized in Artificial Intelligence. I am currently looking for a PFE internship starting April 2027. Mobility: Europe-wide.",
         btn_resume: "CONTACT",
         
@@ -78,7 +78,7 @@ const translations = {
         btn_get_in_touch: "CONTACTEZ-MOI",
         
         hero_greeting: "Bonsoir —",
-        hero_role: "Data Scientist | Ingénieure IA",
+        hero_role: "Ingénieure Data et IA",
         hero_desc: "Je suis élève ingénieure à Centrale Lyon et j’effectue en parallèle un Master 2 spécialisé en Intelligence Artificielle. Je suis actuellement à la recherche d’un stage de fin d’études à partir d'Avril 2027. Mobilité : Europe entière.",
         btn_resume: "CONTACT",
         
