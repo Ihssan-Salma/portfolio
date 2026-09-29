@@ -319,10 +319,10 @@ body.dark-theme .logo {
 
 /* ================= Hero Section ================= */
 .hero-section {
-    padding-top: 80px;
+    padding-top: 150px;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     overflow: visible;
 }
