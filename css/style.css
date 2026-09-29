@@ -210,9 +210,11 @@ body.dark-theme .navbar {
 .nav-link,
 .nav-phone,
 .icon-btn,
+.logo,
 body.dark-theme .nav-link,
 body.dark-theme .nav-phone,
-body.dark-theme .icon-btn {
+body.dark-theme .icon-btn,
+body.dark-theme .logo {
     color: #2c1b18 !important;
 }
 
@@ -220,8 +222,8 @@ body.dark-theme .icon-btn {
     body.dark-theme .navbar {
         filter: none; /* Reset inverted colors for mobile top bar */
     }
-    .nav-link, .nav-phone, .icon-btn, 
-    body.dark-theme .nav-link, body.dark-theme .nav-phone, body.dark-theme .icon-btn {
+    .nav-link, .nav-phone, .icon-btn, .logo,
+    body.dark-theme .nav-link, body.dark-theme .nav-phone, body.dark-theme .icon-btn, body.dark-theme .logo {
         color: var(--text-color) !important; /* Ensure buttons are visible on mobile */
     }
 }
