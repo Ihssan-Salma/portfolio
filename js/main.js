@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
     
-    // Check local storage for saved theme, default to dark
+    // Check local storage for saved theme, default to light
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        body.classList.remove('dark-theme');
-        updateThemeIcon(false);
-    } else {
+    if (savedTheme === 'dark') {
         body.classList.add('dark-theme');
         updateThemeIcon(true);
+    } else {
+        body.classList.remove('dark-theme');
+        updateThemeIcon(false);
     }
     
     themeToggleBtn.addEventListener('click', () => {
