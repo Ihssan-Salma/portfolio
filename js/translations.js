@@ -11,7 +11,7 @@ const translations = {
         hero_greeting: "Good evening —",
         hero_role: "3rd-Year AI Engineering Student",
         hero_desc: "I am a double-degree student pursuing an Engineering Degree in Computer Science at Arts et Métiers Meknès, Morocco, and a Master’s 2 degree specialized in Artificial Intelligence at Centrale Lyon. I am currently studying at Centrale Lyon and looking for a <span style=\"color: var(--primary-color); font-weight: 600;\">PFE internship starting in April 2027. Mobility: Europe-wide.</span>",
-        btn_resume: "CONTACT",
+        btn_resume: "Download CV",
         
         section_experience: "Experience",
         exp1_role: "AI Engineer Intern",
@@ -80,7 +80,7 @@ const translations = {
         hero_greeting: "Bonsoir —",
         hero_role: "Élève ingénieure en 3ème année en IA",
         hero_desc: "Je suis une étudiante en double diplôme, en formation d’ingénieure en Informatique à Arts et Métiers Meknès, au Maroc, et en Master 2 spécialisé en Intelligence Artificielle à Centrale Lyon. Je suis actuellement à Centrale Lyon et à la recherche d’un <span style=\"color: var(--primary-color); font-weight: 600;\">stage de fin d’études (PFE) à partir d’avril 2027. Mobilité : Europe.</span>",
-        btn_resume: "CONTACT",
+        btn_resume: "Télécharger le CV",
         
         section_experience: "Expérience",
         exp1_role: "Stagiaire Ingénieure IA",
