@@ -88,9 +88,7 @@ const translations = {
         lang_fr: "French",
         lang_ar: "Arabic",
         lang_written_spoken: "B2",
-        lang_native: "Native",
-        
-        footer_text: "© 2026 Salma IHSSAN. Designed with precision."
+        lang_native: "Native"
     },
     fr: {
         nav_about: "À propos",
@@ -181,8 +179,6 @@ const translations = {
         lang_fr: "Français",
         lang_ar: "Arabe",
         lang_written_spoken: "B2",
-        lang_native: "Langue maternelle",
-        
-        footer_text: "© 2026 Salma IHSSAN. Conçu avec précision."
+        lang_native: "Langue maternelle"
     }
 };
