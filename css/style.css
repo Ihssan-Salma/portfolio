@@ -1423,3 +1423,9 @@ body.dark-theme .btn-primary { color: #0e1523; }
 @media (max-width: 1024px) {
     .hero-section { padding-top: 140px; }
 }
+
+/* Keep the introduction on its own initial screen. */
+.hero-section {
+    min-height: 100vh;
+    min-height: 100svh;
+}
