@@ -1374,3 +1374,44 @@ body.dark-theme .btn-primary { color: #0e1523; }
     .profile-avatar { height: 250px; }
     .hero-content { padding: 28px; }
 }
+
+/* Open introduction: portrait and biography without separate cards. */
+.hero-container {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    align-items: start;
+    gap: 40px;
+}
+.hero-portrait { margin: 0; min-width: 0; }
+.hero-portrait-image { display: block; width: 100%; height: 330px; object-fit: cover; object-position: center top; border-radius: 16px; }
+.hero-content {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+.hero-content .description { max-width: none; width: 100%; margin-bottom: 0; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 24px; }
+.hero-contact-link { display: inline-flex; align-items: center; gap: 7px; font-size: .8rem; padding: 10px 0; color: var(--text-muted); }
+.hero-contact-link:hover { color: var(--primary-color); }
+.hero-socials { display: flex; align-items: center; gap: 8px; }
+.hero-socials .social-btn { width: 38px; height: 38px; border: 1px solid var(--card-border); font-size: 1.15rem; }
+@media (min-width: 1025px) { .hero-container { align-items: start; } }
+@media (max-width: 1200px) and (min-width: 701px) {
+    .hero-container { grid-template-columns: 210px minmax(0, 1fr); gap: 28px; }
+    .hero-portrait-image { height: 280px; }
+}
+@media (max-width: 700px) {
+    .hero-container { display: flex; flex-direction: column; align-items: stretch; gap: 26px; }
+    .hero-portrait { width: 170px; }
+    .hero-portrait-image { height: 210px; border-radius: 12px; }
+    .hero-content { padding: 0; }
+    .hero-actions { gap: 10px; }
+    .hero-contact-link { flex-basis: 100%; }
+}
