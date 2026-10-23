@@ -2,6 +2,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     
+    // Apply the new defaults once, then remember the visitor's choices.
+    if (localStorage.getItem('displayDefaults') !== 'fr-light-v1') {
+        localStorage.setItem('theme', 'light');
+        localStorage.setItem('language', 'fr');
+        localStorage.setItem('displayDefaults', 'fr-light-v1');
+    }
+
     // --- Theme Switcher ---
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
@@ -40,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Language Switcher ---
     const langToggleBtn = document.getElementById('lang-toggle');
     
-    // Check local storage for saved language, default to 'en'
-    let currentLang = localStorage.getItem('language') || 'en';
+    // Check local storage for saved language, default to French
+    let currentLang = localStorage.getItem('language') === 'en' ? 'en' : 'fr';
     updateLanguage(currentLang);
     
     langToggleBtn.addEventListener('click', () => {
@@ -51,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     function updateLanguage(lang) {
+        document.documentElement.lang = lang;
         // Update button text to show the *other* language options
         langToggleBtn.textContent = lang === 'en' ? 'FR' : 'EN';
         
@@ -65,18 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // --- Navbar Scroll Effect ---
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-            navbar.style.padding = '10px 20px';
-        } else {
-            navbar.style.boxShadow = 'none';
-            navbar.style.padding = '15px 20px';
-        }
-    });
 
     // --- Active Nav Link Update on Scroll ---
     const sections = document.querySelectorAll('section');
@@ -128,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setupAutoScroll('.activity-carousel', '.activity-carousel-img', 3000);
-    setupAutoScroll('.project-images-carousel', '.proj-img', 3500); 
     setupAutoScroll('.exp-images-carousel', '.exp-carousel-img', 4000);
 
     // --- Mobile Menu Toggle ---
@@ -138,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileBtn && navMenu) {
         mobileBtn.addEventListener('click', () => {
             navMenu.classList.toggle('nav-active');
+            mobileBtn.setAttribute('aria-expanded', String(navMenu.classList.contains('nav-active')));
             // Toggle icon between menu and x
             const icon = mobileBtn.querySelector('i');
             if (navMenu.classList.contains('nav-active')) {
@@ -154,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileNavLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('nav-active');
+                mobileBtn.setAttribute('aria-expanded', 'false');
                 const icon = mobileBtn.querySelector('i');
                 icon.classList.remove('bx-x');
                 icon.classList.add('bx-menu');

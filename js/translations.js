@@ -6,11 +6,12 @@ const translations = {
         nav_techstack: "Tech Stack",
         nav_education: "Education",
         nav_certs: "Certifications",
+        nav_activities: "Activities",
         btn_get_in_touch: "CONTACT",
         
         hero_greeting: "Good evening —",
         hero_role: "3rd-Year AI Engineering Student",
-        hero_desc: "I am a double-degree student pursuing an Engineering Degree in Computer Science at Arts et Métiers Meknès, Morocco, and a Master’s 2 degree specialized in Artificial Intelligence at Centrale Lyon. I am currently studying at Centrale Lyon and looking for a <span style=\"color: var(--primary-color); font-weight: 600;\">PFE internship starting in April 2027. Mobility: Europe-wide.</span>",
+        hero_desc: "As a dual-degree engineering student, I combine a background in software engineering with a specialization in artificial intelligence through a Master\u2019s 2 at \u00c9cole Centrale de Lyon. This combination enables me to build AI solutions on a foundation of software engineering. I am particularly interested in projects involving agentic AI, multi-agent systems, and automation. I am looking for a <strong style=\"color: var(--primary-color);\">final-year internship (PFE) starting in April 2027. Mobility: France.</strong>",
         btn_resume: "Download CV",
         
         section_experience: "Experience",
@@ -24,6 +25,24 @@ const translations = {
         exp2_company: "Autoroutes du Maroc – Rabat, Morocco",
         exp2_desc: "Predictive traffic analysis using large-scale historical traffic data (2022–2024) to analyze congestion patterns. Modeled star schemas, written DAX measures, and designed interactive Power BI dashboards with advanced data visualizations to support strategic decision-making, while ensuring strict data confidentiality throughout.",
         
+        exp3_role: "Entrepreneurship - Academic Group Project (ECL)",
+        exp3_company: "In collaboration with Groupama",
+        exp3_desc: "Academic entrepreneurship project carried out as a group at ECL with Groupama, focused on anticipating farmers' needs by 2040.",
+        proj3_title: "Odoo ERP for E-commerce",
+        proj3_feat1: "E-commerce management with an ERP built on Odoo.",
+        proj4_title: "Agile Tracker - Project Management Platform",
+        proj4_feat1: "Project management platform based on the Agile methodology, built with Spring Boot, React, Docker, MongoDB and MySQL.",
+        proj5_title: "SmartHome - Packet Tracer Simulation",
+        proj5_feat1: "Smart home simulation in Cisco Packet Tracer with an HTTPS architecture.",
+        proj6_title: "Agricultural Management Platform",
+        proj6_feat1: "Agricultural management platform developed with .NET.",
+
+        proj7_title: "AI Multi-Agent Platform",
+        proj7_subtitle: "ECL, France - 2026",
+        proj7_feat1: "Multi-agent platform helping businesses such as restaurants, hotels and beauty salons automatically fill slots left by last-minute cancellations.",
+        proj7_feat2: "Detects cancellations, checks reservations, identifies and contacts the most suitable replacements, confirms the new reservation and updates the calendar.",
+        proj7_feat3: "Handles multiple replacements simultaneously across different businesses while ensuring data security and isolation.",
+
         section_projects: "Projects",
         proj1_title: "Emotion Detection System",
         proj1_subtitle: "ENSAM Meknes – 2026",
@@ -37,6 +56,9 @@ const translations = {
         proj2_feat2: "Deployed to production and successfully utilized for real academic examinations.",
         
         section_techstack: "Tech Stack",
+        tech_ai_data: "AI & Data",
+        tech_software: "Software Engineering",
+        tech_project: "Project Management",
         
         section_education: "Education",
         edu1_degree: "Master’s Student in Artificial Intelligence",
@@ -48,22 +70,24 @@ const translations = {
         edu4_degree: "High School Diploma (Baccalaureate) in Mathematical Sciences A",
         edu4_school: "High School of Excellence Mohammed VI - Benguerir, Morocco",
         
-        section_certs: "Certifications & Activities",
+        section_certs: "Certifications",
+        section_activities: "Activities",
         cert1_name: "Linux Essentials",
         cert1_org: "Linux Professional Institute (May 2026)",
+        cert2_name: "Fundamentals of Agents",
+        cert2_org: "Hugging Face Agents Course (October 17, 2026)",
         act1: "Active Member, Gadz'it Computer Science Club (ENSAM).",
         act2: "Active Member, Social Club (ENSAM).",
         act3: "Active Member, ENSAM Robotics Club (CRI).",
         act4: "Participant, Ramadan AI Hackathon 2026 (Ministry of Digital Transition).",
+        act5: "Participant, Hackathon Aidant 2026 (organized by Sopra Steria and Cr\u00e9dit Agricole).",
 
-        section_softskills: "Soft Skills",
-        softskills_text: "Collaborative - Autonomous - Analytical and Critical Thinking - Problem-solving",
         
         section_languages: "Languages",
         lang_en: "English",
         lang_fr: "French",
         lang_ar: "Arabic",
-        lang_written_spoken: "C1",
+        lang_written_spoken: "B2",
         lang_native: "Native",
         
         footer_text: "© 2026 Salma IHSSAN. Designed with precision."
@@ -75,11 +99,12 @@ const translations = {
         nav_techstack: "Technologies",
         nav_education: "Éducation",
         nav_certs: "Certifications",
+        nav_activities: "Activit\u00e9s",
         btn_get_in_touch: "CONTACTEZ-MOI",
         
         hero_greeting: "Bonsoir —",
         hero_role: "Élève ingénieure en 3ème année en IA",
-        hero_desc: "Je suis une étudiante en double diplôme, en formation d’ingénieure en Informatique à Arts et Métiers Meknès, au Maroc, et en Master 2 spécialisé en Intelligence Artificielle à Centrale Lyon. Je suis actuellement à Centrale Lyon et à la recherche d’un <span style=\"color: var(--primary-color); font-weight: 600;\">stage de fin d’études (PFE) à partir d’avril 2027. Mobilité : Europe.</span>",
+        hero_desc: "\u00c9l\u00e8ve-ing\u00e9nieure en double cursus, je combine une formation en ing\u00e9nierie logicielle avec une sp\u00e9cialisation en intelligence artificielle dans le cadre d\u2019un Master 2 \u00e0 l\u2019\u00c9cole Centrale de Lyon. Cette double comp\u00e9tence me permet de cr\u00e9er des solutions d\u2019intelligence artificielle en m\u2019appuyant sur des bases en ing\u00e9nierie logicielle. Je souhaite particuli\u00e8rement m\u2019investir dans des projets d\u2019IA agentique, de syst\u00e8mes multi-agents et d\u2019automatisation. Je suis \u00e0 la recherche d\u2019un <strong style=\"color: var(--primary-color);\">stage de fin d\u2019\u00e9tudes (PFE) \u00e0 partir d\u2019avril 2027. Mobilit\u00e9 : France.</strong>",
         btn_resume: "Télécharger le CV",
         
         section_experience: "Expérience",
@@ -93,6 +118,24 @@ const translations = {
         exp2_company: "Autoroutes du Maroc – Rabat, Maroc",
         exp2_desc: "Analyse prédictive du trafic à partir de données historiques (2022-2024) pour analyser les modèles de congestion. Modélisation de schémas en étoile, création de mesures DAX et conception de tableaux de bord Power BI interactifs avec visualisations avancées pour soutenir les décisions stratégiques, tout en garantissant la confidentialité des données.",
         
+        exp3_role: "Entrepreneuriat - Projet acad\u00e9mique en groupe (ECL)",
+        exp3_company: "En collaboration avec Groupama",
+        exp3_desc: "Projet acad\u00e9mique d'entrepreneuriat men\u00e9 en groupe \u00e0 l'ECL, en collaboration avec Groupama, pour anticiper les besoins des agriculteurs \u00e0 l'horizon 2040.",
+        proj3_title: "ERP Odoo pour le e-commerce",
+        proj3_feat1: "Gestion du e-commerce avec un ERP basé sur Odoo.",
+        proj4_title: "Agile Tracker - Plateforme de gestion de projet",
+        proj4_feat1: "Plateforme de gestion de projet selon la méthodologie Agile, développée avec Spring Boot, React, Docker, MongoDB et MySQL.",
+        proj5_title: "SmartHome - Simulation avec Packet Tracer",
+        proj5_feat1: "Simulation d'une maison connectée avec Cisco Packet Tracer et une architecture HTTPS.",
+        proj6_title: "Plateforme de gestion agricole",
+        proj6_feat1: "Plateforme de gestion des activités agricoles développée avec .NET.",
+
+        proj7_title: "Plateforme Multi-Agents IA",
+        proj7_subtitle: "ECL, France - 2026",
+        proj7_feat1: "Plateforme multi-agents pour aider les entreprises (restaurants, h\u00f4tels, salons de beaut\u00e9, etc.) \u00e0 remplacer automatiquement les r\u00e9servations annul\u00e9es \u00e0 la derni\u00e8re minute.",
+        proj7_feat2: "D\u00e9tecte les annulations, v\u00e9rifie les r\u00e9servations, identifie et contacte les meilleurs rempla\u00e7ants, puis confirme la nouvelle r\u00e9servation et met \u00e0 jour le calendrier.",
+        proj7_feat3: "G\u00e8re plusieurs remplacements simultan\u00e9ment pour diff\u00e9rentes entreprises, tout en garantissant la s\u00e9curit\u00e9 et l\u2019isolation de leurs donn\u00e9es.",
+
         section_projects: "Projets",
         proj1_title: "Système de Détection d'Émotions",
         proj1_subtitle: "ENSAM Meknès – 2026",
@@ -106,6 +149,9 @@ const translations = {
         proj2_feat2: "Déployée en production et utilisée avec succès pour des examens académiques réels.",
         
         section_techstack: "Technologies",
+        tech_ai_data: "IA et Data",
+        tech_software: "G\u00e9nie Logiciel",
+        tech_project: "Gestion de Projet",
         
         section_education: "Éducation",
         edu1_degree: "Étudiante en Master - Intelligence Artificielle",
@@ -117,22 +163,24 @@ const translations = {
         edu4_degree: "Baccalauréat en Sciences Mathématiques A",
         edu4_school: "Lycée d'Excellence Mohammed VI - Benguérir, Maroc",
         
-        section_certs: "Certifications & Activités",
+        section_certs: "Certifications",
+        section_activities: "Activités",
         cert1_name: "Linux Essentials",
         cert1_org: "Linux Professional Institute (Mai 2026)",
+        cert2_name: "Fundamentals of Agents",
+        cert2_org: "Hugging Face Agents Course (17 octobre 2026)",
         act1: "Membre Actif, Club d'Informatique Gadz'it (ENSAM).",
         act2: "Membre Actif, Club Social (ENSAM).",
         act3: "Membre Actif, Club Robotique de l'ENSAM (CRI).",
         act4: "Participante, Ramadan IA Hackathon 2026 (Ministère de la Transition Numérique).",
+        act5: "Participante au Hackathon Aidant 2026 (organis\u00e9 par Sopra Steria et Cr\u00e9dit Agricole).",
 
-        section_softskills: "Soft Skills",
-        softskills_text: "Collaboratif - Autonome - Esprit Analytique et Critique - Résolution de problèmes",
         
         section_languages: "Langues",
         lang_en: "Anglais",
         lang_fr: "Français",
         lang_ar: "Arabe",
-        lang_written_spoken: "C1",
+        lang_written_spoken: "B2",
         lang_native: "Langue maternelle",
         
         footer_text: "© 2026 Salma IHSSAN. Conçu avec précision."
