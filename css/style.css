@@ -1350,3 +1350,27 @@ body.dark-theme .btn-primary { color: #0e1523; }
     .title { font-size: 2.3rem; }
     .section-title { font-size: 1.8rem; }
 }
+
+/* Use the available desktop width instead of a narrow centered column. */
+@media (min-width: 1025px) {
+    .section-container, .hero-container { width: 100%; max-width: 1600px; }
+    .hero-section { padding: 64px 40px 56px; }
+    .section { padding: 64px 40px; }
+    .hero-container { gap: 32px; align-items: stretch; }
+    .static-profile-card { width: 280px; padding: 20px; }
+    .profile-avatar { height: 280px; }
+    .hero-content { padding: 36px; }
+    .title { font-size: clamp(2.6rem, 3.6vw, 3.8rem); }
+    .subtitle { font-size: 1.35rem; }
+    .description { max-width: 850px; font-size: 1rem; line-height: 1.85; }
+    .hero-resume { margin-top: 28px; }
+    .nav-link { font-size: .95rem; }
+    .exp-desc, .project-features li { font-size: .95rem; }
+    .cert-info strong { font-size: .95rem; }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .hero-section, .section { padding-left: 28px; padding-right: 28px; }
+    .static-profile-card { width: 230px; }
+    .profile-avatar { height: 250px; }
+    .hero-content { padding: 28px; }
+}
