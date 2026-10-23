@@ -1362,7 +1362,7 @@ body.dark-theme .btn-primary { color: #0e1523; }
     .hero-content { padding: 36px; }
     .title { font-size: clamp(2.6rem, 3.6vw, 3.8rem); }
     .subtitle { font-size: 1.35rem; }
-    .description { max-width: 850px; font-size: 1rem; line-height: 1.85; }
+    .description { max-width: none; width: 100%; font-size: 1rem; line-height: 1.85; }
     .hero-resume { margin-top: 28px; }
     .nav-link { font-size: .95rem; }
     .exp-desc, .project-features li { font-size: .95rem; }
