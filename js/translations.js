@@ -11,7 +11,7 @@ const translations = {
         
         hero_greeting: "Good evening —",
         hero_role: "3rd-Year AI Engineering Student",
-        hero_desc: "As a dual-degree engineering student, I combine a background in software engineering with a specialization in artificial intelligence through a Master\u2019s 2 at \u00c9cole Centrale de Lyon. This combination enables me to build AI solutions on a foundation of software engineering. I am particularly interested in projects involving agentic AI, multi-agent systems, and automation. I am looking for a <strong style=\"color: var(--primary-color);\">final-year internship (PFE) starting in April 2027. Mobility: France.</strong>",
+        hero_desc: "As a dual-degree engineering student, I combine a background in software engineering with a specialization in artificial intelligence through a Master\u2019s 2 at \u00c9cole Centrale de Lyon. This combination enables me to build AI solutions on a foundation of software engineering. I am looking for a <strong style=\"color: var(--primary-color);\">final-year internship (PFE) starting in April 2027. Mobility: France.</strong>",
         btn_resume: "Download CV",
         
         section_experience: "Experience",
@@ -106,7 +106,7 @@ const translations = {
         
         hero_greeting: "Bonsoir —",
         hero_role: "Élève ingénieure en 3ème année en IA",
-        hero_desc: "\u00c9l\u00e8ve-ing\u00e9nieure en double cursus, je combine une formation en ing\u00e9nierie logicielle avec une sp\u00e9cialisation en intelligence artificielle dans le cadre d\u2019un Master 2 \u00e0 l\u2019\u00c9cole Centrale de Lyon. Cette double comp\u00e9tence me permet de cr\u00e9er des solutions d\u2019intelligence artificielle en m\u2019appuyant sur des bases en ing\u00e9nierie logicielle. Je souhaite particuli\u00e8rement m\u2019investir dans des projets d\u2019IA agentique, de syst\u00e8mes multi-agents et d\u2019automatisation. Je suis \u00e0 la recherche d\u2019un <strong style=\"color: var(--primary-color);\">stage de fin d\u2019\u00e9tudes (PFE) \u00e0 partir d\u2019avril 2027. Mobilit\u00e9 : France.</strong>",
+        hero_desc: "\u00c9l\u00e8ve-ing\u00e9nieure en double cursus, je combine une formation en ing\u00e9nierie logicielle avec une sp\u00e9cialisation en intelligence artificielle dans le cadre d\u2019un Master 2 \u00e0 l\u2019\u00c9cole Centrale de Lyon. Cette double comp\u00e9tence me permet de cr\u00e9er des solutions d\u2019intelligence artificielle en m\u2019appuyant sur des bases en ing\u00e9nierie logicielle. Je suis \u00e0 la recherche d\u2019un <strong style=\"color: var(--primary-color);\">stage de fin d\u2019\u00e9tudes (PFE) \u00e0 partir d\u2019avril 2027. Mobilit\u00e9 : France.</strong>",
         btn_resume: "Télécharger le CV",
         
         section_experience: "Expérience",
