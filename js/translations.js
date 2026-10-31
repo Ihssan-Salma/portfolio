@@ -37,7 +37,7 @@ const translations = {
         proj6_title: "Agricultural Management Platform",
         proj6_feat1: "Agricultural management platform developed with .NET.",
 
-        proj7_title: "AI Multi-Agent Platform",
+        proj7_title: "Reslot AI",
         proj7_subtitle: "ECL, France - 2026",
         proj7_feat1: "Multi-agent platform helping businesses such as restaurants, hotels and beauty salons automatically fill slots left by last-minute cancellations.",
         proj7_feat2: "Detects cancellations, checks reservations, identifies and contacts the most suitable replacements, confirms the new reservation and updates the calendar.",
@@ -132,7 +132,7 @@ const translations = {
         proj6_title: "Plateforme de gestion agricole",
         proj6_feat1: "Plateforme de gestion des activités agricoles développée avec .NET.",
 
-        proj7_title: "Plateforme Multi-Agents IA",
+        proj7_title: "Reslot AI",
         proj7_subtitle: "ECL, France - 2026",
         proj7_feat1: "Plateforme multi-agents pour aider les entreprises (restaurants, h\u00f4tels, salons de beaut\u00e9, etc.) \u00e0 remplacer automatiquement les r\u00e9servations annul\u00e9es \u00e0 la derni\u00e8re minute.",
         proj7_feat2: "D\u00e9tecte les annulations, v\u00e9rifie les r\u00e9servations, identifie et contacte les meilleurs rempla\u00e7ants, puis confirme la nouvelle r\u00e9servation et met \u00e0 jour le calendrier.",

@@ -681,6 +681,11 @@ body.dark-theme .logo {
     margin-top: 3px;
 }
 
+.project-github-link {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
 .project-diagram-wrapper {
     margin-bottom: 20px;
     border-radius: 8px;
