@@ -1,0 +1,16 @@
+.soc-workflow{height:100dvh;display:flex;flex-direction:column;padding:12px;background:#f7f5ef}
+.soc-workflow .diagram{flex:1;min-height:180px;height:auto}
+.soc-workflow .scene-caption{min-height:64px;padding:8px 0}
+.soc-workflow .context-scene{text-align:center;padding:20px}
+.soc-workflow .context-scene strong{font-size:clamp(28px,6vw,54px)}
+.soc-workflow .context-scene b{font-size:12px}
+.soc-workflow .progress{margin-top:8px}
+.soc-decisions{border:0;border-top:1px solid #d8dfe5;margin:0 0 8px;padding:8px 0;font-size:12px}
+.soc-decisions button{border:1px solid #c7d3df;border-radius:6px;background:#fffdf8;color:#172d49;padding:6px 9px;margin:3px}
+.soc-decisions button[aria-pressed=true]{background:#234f91;color:white}
+.soc-decisions p{margin:5px 0;line-height:1.4}
+.soc-workflow .inspector{max-height:95%;overflow:auto}
+.soc-workflow .diagram{display:flex;flex-direction:column}
+.soc-workflow .diagram>.react-flow{flex:1;min-height:0;height:auto}
+.soc-intro{order:-1;flex-shrink:0;display:flex;flex-wrap:wrap;gap:4px 12px;padding:8px 12px;margin-bottom:6px;border-left:3px solid #315e83;background:#eef3f7;color:#172d49;font-size:12px;line-height:1.5}
+@media(max-width:500px){.soc-workflow .playback{gap:4px}.soc-workflow .scene-heading{letter-spacing:0}.soc-workflow .component{width:220px}.soc-workflow .scene-caption{min-height:78px}}

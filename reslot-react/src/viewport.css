@@ -1,0 +1,14 @@
+/* The iframe owns one screen: reserve space for controls, then fit the graph. */
+html,body,#root{height:100%;margin:0}
+.workflow,.workflow.soc-workflow{height:100dvh;min-height:0;display:flex;flex-direction:column;padding:12px;overflow:hidden}
+.workflow .diagram{flex:1 1 0;min-height:0;height:auto;margin:8px 0}
+.workflow .scene-heading,.workflow .scene-caption,.workflow .playback,.workflow .progress,.workflow .soc-decisions{flex-shrink:0}
+.workflow .scene-caption{min-height:0;padding:6px 0}
+.workflow .progress{margin:6px 0 0}
+.workflow .inspector{max-height:calc(100% - 24px);overflow:auto}
+.workflow .component{height:148px;min-height:148px}
+@media(max-height:460px){
+ .workflow .scene-caption p{display:none}
+ .workflow .playback button,.workflow .playback select{padding:5px 8px}
+ .workflow .soc-decisions{padding:3px 0;margin-bottom:3px}
+}

@@ -1,0 +1,13 @@
+/* Normal is a commercial font; only use an installed or supplied licensed face.
+   When the WOFF2 is supplied, add its local URL before the local() sources.
+   No preview font, remote dependency or missing-file request is substituted. */
+@font-face {
+  font-family: 'Normal';
+  src: local('Normal'), local('Normal Regular');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  --portfolio-font: 'Normal', 'Trebuchet MS', Arial, sans-serif;
+}

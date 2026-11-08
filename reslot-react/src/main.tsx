@@ -1,0 +1,24 @@
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import ReslotApp from './ReslotWorkflow';
+import SocApp from './SocWorkflow';
+import EgradingApp from './EgradingWorkflow';
+import AgileApp from './AgileWorkflow';
+import FacialApp from './FacialWorkflow';
+import IotApp from './IotWorkflow';
+import BankingApp from './BankingWorkflow';
+import TrafficApp from './TrafficWorkflow';
+import './viewport.css';
+import './styles.css';
+import './dark-workflows.css';
+
+const project = new URLSearchParams(location.search).get('project');
+if (project === 'soc') document.title = 'SOC Sentinel AI — enquête simulée';
+if (project === 'egrading') document.title = 'eGrading — parcours pédagogique';
+if (project === 'agile') document.title = 'Agile Tracker — parcours microservices';
+if (project === 'facial') document.title = 'Expressions faciales — classification illustrative';
+if (project === 'iot') document.title = 'Smart Home IoT — simulation réseau';
+if (project === 'banking') document.title = 'Smart Banking — réclamations fictives';
+if (project === 'traffic') document.title = 'Autoroutes du Maroc — analyse du trafic illustrative';
+const Root = project === 'traffic' ? TrafficApp : project === 'banking' ? BankingApp : project === 'iot' ? IotApp : project === 'facial' ? FacialApp : project === 'agile' ? AgileApp : project === 'egrading' ? EgradingApp : project === 'soc' ? SocApp : ReslotApp;
+createRoot(document.getElementById('root')!).render(<StrictMode><Root /></StrictMode>);

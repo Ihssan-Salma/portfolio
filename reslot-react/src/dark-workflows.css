@@ -1,0 +1,137 @@
+@import '../../fonts.css';
+
+/* The portfolio palette is shared by every local workflow, including standalone views. */
+:root {
+  color-scheme: dark;
+  --wf-ground: #000000;
+  --wf-panel: #000000;
+  --wf-raised: #ffffff08;
+  --wf-text: #ffffff;
+  --wf-muted: #ffffffb8;
+  --wf-mint: #cc00ff;
+  --wf-copper: #cc00ff;
+  --wf-issue: #ffffff;
+  --wf-line: #ffffff30;
+  color: var(--wf-text);
+  background: var(--wf-ground);
+  font-family: var(--portfolio-font, 'Normal', 'Trebuchet MS', Arial, sans-serif);
+}
+html, body, #root { background: #000000; color: #ffffff; }
+body, button, input, select, textarea { font-family: var(--portfolio-font, 'Normal', 'Trebuchet MS', Arial, sans-serif); }
+::selection { color: #ffffff; background: #cc00ff; }
+.eg-player { color: #ffffff; background: #000000; font-family: var(--portfolio-font, 'Normal', 'Trebuchet MS', Arial, sans-serif); scrollbar-color: #ffffff50 #000000; }
+.eg-canvas { background: #000000; border: 0; border-radius: 14px; box-shadow: none; }
+.eg-canvas .react-flow {
+  --xy-background-color: transparent;
+  --xy-background-color-default: transparent;
+  --xy-node-color-default: #ffffff;
+  --xy-node-background-color-default: #000000;
+  --xy-node-border-default: 1px solid #ffffff30;
+  --xy-edge-stroke-default: #ffffff60;
+  --xy-edge-label-color-default: #cc00ff;
+  --xy-edge-label-background-color-default: #000000;
+  background: transparent;
+}
+.eg-card { color: #ffffff; background: #000000; border-color: #ffffff30; border-radius: 14px; }
+.eg-card strong { color: #ffffff; }
+.eg-role, .eg-card p, .eg-status { color: #ffffffb8; }
+.eg-status i { background: #ffffff80; }
+.eg-card.is-active { border-color: #cc00ff; }
+.eg-card.is-active .eg-status { color: #cc00ff; }
+.eg-card.is-active .eg-status i { background: #cc00ff; }
+.eg-card.is-exception.is-active { border-color: #ffffff; border-style: dashed; }
+.eg-card.is-exception .eg-status { color: #ffffff; }
+.eg-card.is-exception .eg-status i { background: #ffffff; border-radius: 0; transform: rotate(45deg); }
+.eg-token { filter: none; }
+.eg-boundary-label { color: #cc00ff; }
+.eg-boundary-label span { color: #ffffffb8; }
+.eg-intro { background: #000000; }
+.eg-eyebrow, .eg-intro small, .eg-intro p { color: #ffffffb8; }
+.eg-intro h1 { color: #ffffff; }
+.eg-roles span { color: #ffffff; background: #000000; border-color: #ffffff30; border-radius: 8px; }
+.eg-roles b { color: #cc00ff; }
+.eg-inspector { color: #ffffff; background: #000000f5; border-color: #ffffff60; box-shadow: 0 18px 44px #000000; backdrop-filter: blur(18px); scrollbar-color: #ffffff50 #000000; }
+.eg-inspector button { color: #ffffffb8; }
+.eg-inspector button:hover, .eg-inspector h2 { color: #ffffff; }
+.eg-inspector p { color: #ffffffb8; }
+.eg-caption h2, .eg-caption > b { color: #ffffff; }
+.eg-caption p, .eg-caption > span { color: #ffffffb8; }
+.eg-caption.is-issue h2 { color: #ffffff; text-decoration: underline dashed #ffffff80; text-underline-offset: 4px; }
+.eg-controls button, .eg-controls select { color: #ffffff; background: #000000; border-color: #ffffff40; box-shadow: none; }
+.eg-controls button:hover:not(:disabled), .eg-controls select:hover { border-color: #cc00ff; background: #000000; }
+.eg-controls .eg-primary, .eg-controls .eg-primary:hover:not(:disabled) { color: #000000; background: #cc00ff; border-color: #cc00ff; font-weight: 600; }
+.eg-controls button[aria-pressed=true] { color: #ffffff; border-color: #cc00ff; background: #000000; }
+.eg-controls label, .eg-progress, .eg-notice { color: #ffffffb8; }
+.eg-progress input { accent-color: #cc00ff; }
+.eg-player button:focus-visible, .eg-player input:focus-visible, .eg-player select:focus-visible { outline-color: #cc00ff; }
+
+/* The face is a neutral, explicitly synthetic illustration. */
+.fd-face > rect:first-child { fill: #ffffff08; }
+.fd-face > path[fill="#c7d4db"] { fill: #ffffff30; }
+.fd-face > ellipse { fill: #ffffff; }
+.fd-face > ellipse[fill="#c5c9cc"] { fill: #ffffffb8; }
+.fd-face > path[stroke="#456075"] { stroke: #000000; }
+.fd-face > rect[stroke="#3476c9"] { stroke: #cc00ff; }
+.fd-face > rect[stroke="#b95b4d"] { stroke: #ffffff; stroke-dasharray: 4 3; }
+.fd-face > rect[fill="#fffdf8"] { fill: #000000; }
+.fd-face text { fill: #ffffffb8; }
+.fd-face text[fill="#275b8f"], .fd-face text[fill="#a85246"] { fill: #ffffff; }
+.fd-scores > div > span:first-child, .fd-scores b { color: #ffffffb8; }
+.fd-bar { background: #ffffff20; }
+.fd-bar i { background: #cc00ff; }
+.fd-network, .fd-confidence, .fd-smoothing, .fd-evaluation, .fd-matrix { background: #ffffff08; }
+.fd-network > span, .fd-smoothing b { color: #ffffff; background: #000000; border-color: #ffffff30; }
+.fd-network i, .fd-confidence strong, .fd-evaluation > span { color: #ffffff; }
+.fd-network small, .fd-confidence > span, .fd-confidence small, .fd-smoothing > div > span, .fd-smoothing small, .fd-evaluation small, .fd-matrix small { color: #ffffffb8; }
+.fd-confidence > div { background: #ffffff20; }
+.fd-confidence i { border-color: #ffffff; }
+.fd-confidence b { background: #cc00ff; }
+.fd-confidence.is-weak strong { color: #ffffff; }
+.fd-confidence.is-weak b { background: #ffffff; }
+.fd-smoothing b[data-current=true] { color: #000000; background: #cc00ff; border-color: #cc00ff; }
+.fd-matrix i { background: #ffffff20; }
+.fd-matrix .is-diagonal { background: #cc00ff; }
+.fd-matrix .is-disagreement { background: transparent; border-color: #ffffff; }
+
+/* Home network, devices and acknowledgements. */
+.iot-lamp, .iot-door, .iot-dashboard, .iot-condition, .iot-ack, .iot-rule, .iot-route, .iot-https { background: #ffffff08; }
+.iot-dashboard > div, .iot-dashboard small, .iot-condition > small, .iot-condition > span, .iot-ack > span, .iot-ack small, .iot-rule > span, .iot-rule small, .iot-route small, .iot-https small { color: #ffffffb8; }
+.iot-dashboard small { border-color: #ffffff30; }
+.iot-dashboard b, .iot-condition > strong, .iot-ack b, .iot-rule > b, .iot-route > span, .iot-route > div, .iot-https { color: #ffffff; }
+.iot-route i { border-color: #cc00ff; background: #cc00ff; }
+.iot-https.is-denied { color: #ffffff; outline: 1px dashed #ffffff60; outline-offset: -1px; }
+.iot-lamp > circle { fill: #cc00ff; fill-opacity: .18; }
+.iot-lamp path { stroke: #ffffff; }
+.iot-lamp path[fill="#a7ccef"] { fill: #cc00ff; }
+.iot-lamp path[fill="#d7e0e5"] { fill: #ffffff20; }
+.iot-lamp text, .iot-door text { fill: #ffffff; }
+.iot-door path { stroke: #ffffff; }
+.iot-door path[fill="#dbe8f1"] { fill: #ffffff20; }
+.iot-door circle { fill: #cc00ff; }
+
+/* Masking, asynchronous workers, extraction and supervised review. */
+.bank-text, .bank-model, .bank-trace, .bank-queue, .bank-flow, .bank-sources, .bank-evidence, .bank-rules, .bank-alert, .bank-review { background: #ffffff08; color: #ffffff; }
+.bank-text small, .bank-model > small, .bank-trace small, .bank-queue small, .bank-flow small, .bank-sources small, .bank-evidence small, .bank-rules > small, .bank-alert small, .bank-review small, .bank-evidence > span { color: #ffffffb8; }
+.bank-text p { color: #ffffff !important; }
+.bank-mask { background: #000000; outline: 1px solid #cc00ff; outline-offset: -1px; }
+.bank-mask small { color: #ffffff; }
+.bank-trace b, .bank-rules b, .bank-flow > b, .bank-sources b, .bank-rules > strong { color: #ffffff; }
+.bank-queue i { background: #ffffff20 !important; border-color: #ffffff40; }
+.bank-queue i:nth-child(2) { background: #cc00ff !important; border-color: #cc00ff; }
+.bank-flow > span { background: #000000; border-color: #ffffff30; }
+.bank-model pre { color: #ffffff; }
+.bank-rules > strong > small { color: #ffffffb8; }
+.bank-alert { background: #000000; outline: 1px dashed #ffffff; outline-offset: -1px; }
+.bank-alert > strong { color: #ffffff; }
+.bank-review svg circle, .bank-review svg path { fill: #ffffff20; stroke: #ffffff; }
+
+/* Appointment and security investigation journeys. */
+.journey-panel { background: #ffffff08; color: #ffffff; }
+.journey-panel small, .journey-slot strong small, .journey-decisions > span, .journey-decisions p { color: #ffffffb8; }
+.journey-slot > strong, .journey-list b, .journey-checks b, .journey-list [data-current=true], .journey-caution > strong { color: #ffffff; }
+.journey-offer.is-issue { background: #000000; outline: 1px dashed #ffffff60; outline-offset: -1px; }
+.journey-offer.is-issue > span { color: #ffffff; }
+.journey-log-row i { background: #ffffff40; }
+.journey-log-row i.is-failed { background: #ffffff; border-radius: 0; }
+.journey-log-row i.is-success { background: #cc00ff; }
+.journey-evidence b { background: #000000; border-color: #ffffff30; }

@@ -1,2 +1,14 @@
 .tools/
 __pycache__/
+**/node_modules/
+.publish/
+.vscode/
+.venv/
+**/.env
+**/.env.*
+!**/.env.example
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+CV_Salma_Ihssan_PFE_2027_updated.pdf

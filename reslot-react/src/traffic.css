@@ -1,0 +1,39 @@
+.traffic-appearance{--traffic-panel:#000000;--traffic-text:#ffffff;--traffic-muted:#ffffffb8;--traffic-line:#ffffff30;--traffic-blue:#cc00ff;--traffic-track:#ffffff20;--traffic-issue:#ffffff;--traffic-code:#ffffff08;color-scheme:dark}
+.traffic-appearance .eg-card{padding:14px;gap:0}
+.traffic-appearance .eg-card>.eg-role{margin-bottom:6px}
+.traffic-appearance .eg-card>strong{font-size:17px}
+.traffic-appearance .eg-card>p{font-size:11px;margin:8px 0;line-height:1.4}
+.traffic-controls{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.traffic-controls label{white-space:nowrap}
+.traffic-dashboard,.traffic-source,.traffic-cleaning,.traffic-star,.traffic-dax{margin-top:12px;color:var(--traffic-text);font-size:10px;line-height:1.4}
+.traffic-dashboard small,.traffic-source small,.traffic-cleaning small,.traffic-star small,.traffic-dax small{display:block;color:var(--traffic-muted);font-size:9px;line-height:1.4}
+.traffic-view-heading{display:flex;justify-content:space-between;gap:6px;font-size:9px;color:var(--traffic-muted)}
+.traffic-view-heading>span:last-child{color:var(--traffic-blue)}
+.traffic-kpis{display:flex;justify-content:space-between;gap:10px;margin:7px 0 8px;align-items:center}
+.traffic-kpis .traffic-volume{font-size:23px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--traffic-text)}
+.traffic-kpis small{font-size:8px}
+.traffic-evolution{text-align:right}.traffic-evolution b{font-size:12px;color:var(--traffic-blue);font-weight:500}.traffic-evolution[data-available=false] b{color:var(--traffic-muted);font-size:10px}
+.traffic-bars{display:grid;gap:4px}
+.traffic-bars>div{display:grid;grid-template-columns:27px minmax(0,1fr) 29px;align-items:center;gap:7px;font-size:9px;line-height:1.25;font-variant-numeric:tabular-nums}
+.traffic-bars>div>span{color:var(--traffic-muted)}.traffic-bars>div>b{text-align:right;font-weight:500}
+.traffic-bars>div>div{height:6px;border-radius:2px;background:var(--traffic-track);overflow:hidden}
+.traffic-bars i{display:block;height:100%;border-radius:2px;background:var(--traffic-blue)}
+.traffic-bars .is-peak i{background:var(--traffic-issue)}.traffic-bars .is-peak>b{color:var(--traffic-issue)}
+.traffic-dashboard .traffic-sample-note{font-size:8px;margin-top:7px}
+.traffic-year-files{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 15px}
+.traffic-year-files>div{display:flex;flex-direction:column;align-items:center;padding:12px 4px;border-radius:8px;background:var(--traffic-panel);border:1px solid var(--traffic-line)}
+.traffic-year-files svg{width:24px;height:28px;fill:none;stroke:var(--traffic-blue);stroke-width:1.1;margin-bottom:8px}
+.traffic-year-files b{font-size:12px;font-weight:500}.traffic-year-files span{font-size:8px;color:var(--traffic-muted);margin-top:3px}
+.traffic-mini-row{display:flex;justify-content:space-between;border-top:1px solid var(--traffic-line);padding:8px 0}.traffic-source>small{margin-top:5px}
+.traffic-cleaning>div,.traffic-dax>div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--traffic-line);padding:9px 0}
+.traffic-cleaning>div{padding:6px 0}
+.traffic-cleaning b,.traffic-dax b{font-weight:500;color:var(--traffic-blue);font-size:9px}.traffic-cleaning .traffic-warning b{color:var(--traffic-issue)}
+.traffic-cleaning>small{margin-top:6px}.traffic-dax>small{margin-top:10px}
+.traffic-cleaning .traffic-cleaning-branch{display:block;width:100%;height:34px;margin-top:6px;color:var(--traffic-blue);font-size:9px}.traffic-cleaning-branch text{fill:currentColor}.traffic-cleaning-branch .traffic-branch-issue{fill:var(--traffic-issue)}
+.traffic-star{color:var(--traffic-blue)}.traffic-star svg{width:100%;height:145px;display:block}.traffic-star small{margin-top:6px;text-align:center}
+.traffic-schema-dim rect{fill:var(--traffic-panel);stroke:var(--traffic-line)}.traffic-schema-fact{fill:var(--traffic-track);stroke:var(--traffic-blue)}
+.traffic-dax>span{color:var(--traffic-blue);font-size:9px}.traffic-dax code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;font-size:10px;padding:12px 10px;margin-top:6px;border:1px solid var(--traffic-line);border-radius:7px;background:var(--traffic-code);color:var(--traffic-text)}
+/* Both legacy appearance names inherit the portfolio's current three-color theme. */
+.traffic-bars .is-peak>div{outline:1px dashed #ffffff;outline-offset:2px}
+.traffic-cleaning-branch .traffic-branch-issue{fill:#ffffff;text-decoration:underline}
+@media(max-width:599px){.traffic-appearance .eg-card>p{font-size:10px;margin:6px 0}.traffic-dashboard,.traffic-source,.traffic-cleaning,.traffic-star,.traffic-dax{margin-top:9px}.traffic-appearance .eg-card>strong{font-size:16px}.traffic-appearance .eg-card>.eg-role{font-size:9px}.traffic-kpis .traffic-volume{font-size:21px}.traffic-star svg{height:120px}.traffic-cleaning>div{padding:4px 0}.traffic-dax>div{padding:7px 0}.traffic-bars{gap:3px}}

@@ -1,526 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salma IHSSAN - Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <!-- Boxicons for icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css?v=20">
-    <!-- Devicon for Tech Stack Logos -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Salma Ihssan — Ingénierie Logiciel and AI, disponible pour un stage de fin d'études de six mois à partir d'avril 2027.">
+  <meta property="og:title" content="Salma Ihssan — Ingénierie Logiciel and AI">
+  <meta property="og:description" content="Portfolio de projets IA, data et logiciels de Salma Ihssan, élève ingénieure à l'École Centrale de Lyon.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/favicon.svg?v=removed-1" type="image/svg+xml">
+  <title>Salma Ihssan — Ingénierie Logiciel and AI</title>
+  <link rel="stylesheet" href="fonts.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="interactions.css">
+  <link rel="stylesheet" href="electric.css">
+  <link rel="stylesheet" href="cinema.css">
+  <link rel="stylesheet" href="palette.css">
+  <link rel="stylesheet" href="studio.css?v=22">
+  <link rel="stylesheet" href="mission-control.css">
+  <link rel="stylesheet" href="screens.css?v=16">
+  <link rel="stylesheet" href="nocturne.css?v=8">
 </head>
-<body> <!-- Default light theme -->
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <nav aria-label="Navigation principale" data-i18n-attribute="aria-label" data-i18n-key="mainNavLabel">
+      <a href="#top" data-i18n="navHome">Accueil</a>
+      <a href="#projets" data-i18n="navProjects">Projets</a>
+      <a href="#technologies" data-i18n="navTechnologies">Technologies</a>
+      <a href="#experience" data-i18n="navExperience">Expérience</a>
+      <a href="#certifications" data-i18n="navCertifications">Certifications</a>
+      <a href="#apropos" data-i18n="navAbout">Parcours</a>
+      <a href="#engagements" data-i18n="navEngagements">Engagements</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-controls"><button class="language-toggle" type="button" aria-label="Switch to English" data-language-toggle>EN</button></div>
+  </header>
 
-
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="profile-section">
-                <div class="nav-icons">
-                    <div class="lang-switch">
-                        <button id="lang-toggle" class="icon-btn" aria-label="Change language">EN</button>
-                    </div>
-                    <div class="theme-switch">
-                        <button id="theme-toggle" class="icon-btn" aria-label="Toggle color theme">
-                            <i class='bx bx-moon'></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <nav class="nav-links" id="nav-menu">
-                <a href="#hero" class="nav-link" data-i18n="nav_about">À propos</a>
-                <a href="#experience" class="nav-link" data-i18n="nav_experience">Expérience</a>
-                <a href="#projects" class="nav-link" data-i18n="nav_projects">Projets</a>
-                <a href="#techstack" class="nav-link" data-i18n="nav_techstack">Technologies</a>
-                <a href="#education" class="nav-link" data-i18n="nav_education">Éducation</a>
-                <a href="#certs" class="nav-link" data-i18n="nav_certs">Certifications</a>
-                <a href="#activities" class="nav-link" data-i18n="nav_activities">Activités</a>
-            </nav>
-
-            <div class="nav-actions">
-                <button class="mobile-menu-btn icon-btn" aria-label="Menu" aria-controls="nav-menu" aria-expanded="false">
-                    <i class='bx bx-menu'></i>
-                </button>
-            </div>
+  <main id="contenu">
+    <section class="hero career-hero section" id="top">
+      <div class="career-hero-intro">
+        <div>
+          <p class="hero-discipline">Salma Ihssan · Ingénierie Logiciel and AI</p>
+          <h1 class="career-title"><span>École Centrale de Lyon</span><span>Cycle ingénieur · Master 2 Intelligence Artificielle</span><span>Promotion 2027</span></h1>
         </div>
-    </header>
+        <div class="career-opportunity" id="career-opportunity">
+          <span class="career-label">Prochaine mission</span>
+          <strong>Stage de fin d’études · 6 mois</strong>
+          <span>À partir d’avril 2027 · ouverte aux opportunités en France</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projets" data-i18n="viewProjects">Explorer les projets <span>↘</span></a>
+          <a class="button button-quiet" href="#contact" data-i18n="contactMe">Me contacter</a>
+          <a class="button button-quiet" href="CV_Salma_Ihssan_PFE_2027.pdf" target="_blank" rel="noreferrer" data-i18n="cvLink">CV · PDF ↗</a>
+        </div>
+      </div>
+      <div class="career-portrait-shell">
+        <div class="career-portrait-frame">
+          <img src="assets/salma-ihssan-portrait-cutout.png" alt="Salma Ihssan" class="career-portrait">
+          <span class="career-portrait-caption">Ingénierie Logiciel and AI</span>
+        </div>
+        <div class="career-portrait-note"><span>01</span><strong>Construire des systèmes utiles.</strong><small>IA agentique · génie logiciel · France</small></div>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="hero-container">
-                <figure class="hero-portrait">
-                    <img src="assets/avatar-portrait.jpg" alt="Salma Ihssan" class="hero-portrait-image">
-                </figure>
+    <section class="section tech-section" id="technologies">
+      <div class="tech-controls" role="toolbar" aria-label="Filtrer les technologies">
+        <span class="tech-filter-label">Focus</span>
+        <button class="tech-filter is-active" type="button" data-tech-filter="all">All</button>
+        <button class="tech-filter" type="button" data-tech-filter="ai">Agentic AI</button>
+        <button class="tech-filter" type="button" data-tech-filter="ml">ML / DL</button>
+        <button class="tech-filter" type="button" data-tech-filter="backend">Backend</button>
+        <button class="tech-filter" type="button" data-tech-filter="devops">DevOps</button>
+        <button class="tech-filter" type="button" data-tech-filter="data">Data</button>
+        <span class="tech-filter-result" data-tech-result aria-live="polite">All technologies</span>
+      </div>
+      <div class="section-heading tech-heading"><p class="kicker">01 — <span data-i18n="technologySection">Technologies &amp; outils</span></p><h2 data-i18n="techTitle">Une boîte à outils pour passer de l'idée au système.</h2></div>
+      <div class="tech-groups">
+        <section class="tech-group"><div class="tech-group-heading"><span>01</span><h3 data-i18n="aiGroup">IA, LLMs &amp; systèmes agentiques</h3></div><div class="tech-grid">
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/python.svg" alt="" aria-hidden="true"><span class="tech-fallback">PY</span></span><span>Python</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/langchain.svg" alt="" aria-hidden="true"><span class="tech-fallback">LC</span></span><span>LangChain</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/langgraph.svg" alt="" aria-hidden="true"></span><span>LangGraph</span></div><div class="tech-item"><span class="tech-logo"><span class="tech-wordmark">LS</span></span><span>LangSmith</span></div>
+          <div class="tech-item"><span class="tech-logo"><span class="tech-wordmark">RAG</span></span><span>RAG</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/modelcontextprotocol.svg" alt="" aria-hidden="true"></span><span>Model Context Protocol</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/huggingface.svg" alt="" aria-hidden="true"><span class="tech-fallback">HF</span></span><span>Hugging Face</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/ollama.svg" alt="" aria-hidden="true"><span class="tech-fallback">OL</span></span><span>Ollama</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/groq.svg" alt="" aria-hidden="true"></span><span>Groq</span></div>
+        </div></section>
+        <section class="tech-group"><div class="tech-group-heading"><span>02</span><h3 data-i18n="mlGroup">Machine learning &amp; deep learning</h3></div><div class="tech-grid">
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/pytorch.svg" alt="" aria-hidden="true"><span class="tech-fallback">PT</span></span><span>PyTorch</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/tensorflow.svg" alt="" aria-hidden="true"><span class="tech-fallback">TF</span></span><span>TensorFlow</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/scikitlearn.svg" alt="" aria-hidden="true"><span class="tech-fallback">SK</span></span><span>scikit-learn</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/pandas.svg" alt="" aria-hidden="true"><span class="tech-fallback">PD</span></span><span>Pandas</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/numpy.svg" alt="" aria-hidden="true"><span class="tech-fallback">NP</span></span><span>NumPy</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/opencv.svg" alt="" aria-hidden="true"><span class="tech-fallback">CV</span></span><span>OpenCV</span></div>
+        </div></section>
+        <section class="tech-group"><div class="tech-group-heading"><span>03</span><h3 data-i18n="backendGroup">Backend &amp; software engineering</h3></div><div class="tech-grid">
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/fastapi.svg" alt="" aria-hidden="true"><span class="tech-fallback">FA</span></span><span>FastAPI</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/dotnet.svg" alt="" aria-hidden="true"><span class="tech-fallback">.N</span></span><span>ASP.NET Core</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/java.svg" alt="" aria-hidden="true"><span class="tech-fallback">JV</span></span><span>Java</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/cplusplus.svg" alt="" aria-hidden="true"><span class="tech-fallback">C++</span></span><span>C++</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/javascript.svg" alt="" aria-hidden="true"><span class="tech-fallback">JS</span></span><span>JavaScript</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/react.svg" alt="" aria-hidden="true"><span class="tech-fallback">RE</span></span><span>React</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/microsoftsqlserver.svg" alt="" aria-hidden="true"><span class="tech-fallback">SQL</span></span><span>SQL Server</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/postgresql.svg" alt="" aria-hidden="true"><span class="tech-fallback">PG</span></span><span>PostgreSQL</span></div><div class="tech-item"><span class="tech-logo"><span class="tech-wordmark">SQL</span></span><span>SQL / NoSQL</span></div>
+        <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/springboot.svg" alt="" aria-hidden="true"></span><span>Spring Boot</span></div><div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/swagger.svg" alt="" aria-hidden="true"></span><span>Swagger</span></div><div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/postman.svg" alt="" aria-hidden="true"></span><span>Postman</span></div><div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/mysql.svg" alt="" aria-hidden="true"></span><span>MySQL</span></div><div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/mongodb.svg" alt="" aria-hidden="true"></span><span>MongoDB</span></div></div></section>
+        <section class="tech-group"><div class="tech-group-heading"><span>04</span><h3 data-i18n="devopsGroup">DevOps, cloud &amp; monitoring</h3></div><div class="tech-grid">
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/docker.svg" alt="" aria-hidden="true"><span class="tech-fallback">DK</span></span><span>Docker</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/git.svg" alt="" aria-hidden="true"><span class="tech-fallback">GI</span></span><span>Git</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/github.svg" alt="" aria-hidden="true"><span class="tech-fallback">GH</span></span><span>GitHub</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/linux.svg" alt="" aria-hidden="true"><span class="tech-fallback">LX</span></span><span>Linux</span></div>
+          <div class="tech-item"><span class="tech-logo"><span class="tech-wordmark">CI</span></span><span>CI/CD</span></div><div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/kubernetes.svg" alt="" aria-hidden="true"></span><span>Kubernetes · notions</span></div><div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/jira.svg" alt="" aria-hidden="true"></span><span>Jira</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/prometheus.svg" alt="" aria-hidden="true"><span class="tech-fallback">PR</span></span><span>Prometheus</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/grafana.svg" alt="" aria-hidden="true"><span class="tech-fallback">GR</span></span><span>Grafana</span></div>
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/mlflow.svg" alt="" aria-hidden="true"><span class="tech-fallback">MF</span></span><span>MLflow</span></div>
+        <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/centos.svg" alt="" aria-hidden="true"></span><span>CentOS</span></div><div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/nginx.svg" alt="" aria-hidden="true"></span><span>Nginx</span></div></div></section>
+        <section class="tech-group"><div class="tech-group-heading"><span>05</span><h3 data-i18n="dataGroup">Data analytics</h3></div><div class="tech-grid">
+          <div class="tech-item"><span class="tech-logo"><img loading="lazy" src="assets/logos/powerbi.svg" alt="" aria-hidden="true"></span><span>Power BI</span></div>
+          <div class="tech-item"><span class="tech-logo"><span class="tech-wordmark">DAX</span></span><span>DAX</span></div>
+          <div class="tech-item"><span class="tech-logo"><span class="tech-wordmark">SQL</span></span><span>SQL</span></div>
+        </div></section>
+      </div>
+    </section>
 
-                <div class="hero-content">
+    <section class="section projects-section" id="projets">
+      <div class="project-list">
+        <article class="project-feature project-reslot">
+          <div class="project-index">01 / 05</div>
+          <h3>ReSlot <span>AI</span></h3>
+          <p class="project-lede" data-i18n="reslotLede">Workflow multi-agent en développement pour traiter les annulations et proposer des créneaux à des clients en attente, sans remplacer le système de réservation.</p><div class="stack-list"><span class="stack-chip"><img loading="lazy" src="assets/logos/python.svg" alt="" aria-hidden="true">Python</span><span class="stack-chip"><img loading="lazy" src="assets/logos/langgraph.svg" alt="" aria-hidden="true">LangGraph</span><span class="stack-chip"><img loading="lazy" src="assets/logos/modelcontextprotocol.svg" alt="" aria-hidden="true">MCP</span><span class="stack-chip"><img loading="lazy" src="assets/logos/fastapi.svg" alt="" aria-hidden="true">FastAPI</span><span class="stack-chip"><img loading="lazy" src="assets/logos/postgresql.svg" alt="" aria-hidden="true">PostgreSQL</span><span class="stack-chip"><img loading="lazy" src="assets/logos/docker.svg" alt="" aria-hidden="true">Docker</span><span class="stack-chip"><span class="stack-word">G</span>Google APIs</span></div>
+          <details><summary data-i18n="readCase">Lire l'étude de cas</summary><div class="case-grid"><p><b data-i18n="problem">Problème</b><span data-i18n="reslotProblem">Une annulation laisse une capacité inutilisée alors qu'une liste d'attente existe déjà.</span></p><p><b data-i18n="contribution">Contribution vérifiée</b><span data-i18n="reslotContribution">Architecture quatre agents, offres Gmail contrôlées, persistance PostgreSQL et isolation par tenant ; les écritures Calendar / Sheets et la détection automatique restent limitées ou en cours.</span></p><p><b data-i18n="evaluation">Évaluation</b><span data-i18n="reslotEval">Les tests et fournisseurs simulés documentent ce qui est exercé sans accès réel aux services.</span></p><p><b data-i18n="limits">Limites actuelles</b><span data-i18n="reslotLimits">Ne pas présenter comme automatisées la détection d'annulation ou l'écriture finale d'une réservation sans preuve dans le code.</span></p></div></details>
+          <a class="text-link" href="https://github.com/Ihssan-Salma/reslot-ai" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        </article>
+        <div class="project-row">
+          <article class="project-card"><div class="project-index">02 / 05</div><div class="project-meta"><span>Deep learning · Computer vision</span></div><h3>Facial expression<br><em>recognition</em></h3><p data-i18n="emotionDesc">Un CNN entraîné sur FER2013 pour classifier sept expressions faciales, avec augmentation des données, équilibrage des classes, évaluation F1 / matrice de confusion et démonstration vidéo OpenCV avec suivi des visages et lissage des prédictions.</p><div class="stack-list stack-list--small"><span class="stack-chip"><img loading="lazy" src="assets/logos/tensorflow.svg" alt="" aria-hidden="true">TensorFlow / Keras</span><span class="stack-chip"><img loading="lazy" src="assets/logos/opencv.svg" alt="" aria-hidden="true">OpenCV</span></div><div class="tag-line">F1 · confusion matrices</div><a class="text-link" href="https://github.com/Ihssan-Salma/DL_facial_emotion_recognition_project" target="_blank" rel="noreferrer"><span data-i18n="viewRepo">Voir le dépôt</span> <span>↗</span></a></article>
+          <article class="project-card project-dark"><div class="project-index">03 / 05</div><div class="project-meta"><span data-i18n="inProgress">En développement</span></div><h3>SOC Sentinel<br><em>AI</em></h3><p data-i18n="sentinelDesc">Assistant d'investigation cyber pour le triage d'alertes, la collecte de preuves et des rapports relus par un analyste.</p><div class="stack-list stack-list--small"><span class="stack-chip"><img loading="lazy" src="assets/logos/wazuh.ico" alt="" aria-hidden="true">Wazuh</span><span class="stack-chip"><img loading="lazy" src="assets/logos/langchain.svg" alt="" aria-hidden="true">LangChain</span><span class="stack-chip"><img loading="lazy" src="assets/logos/groq.svg" alt="" aria-hidden="true">Groq</span><span class="stack-chip">MCP</span><span class="stack-chip">MITRE ATT&amp;CK</span></div><div class="tag-line">Human-in-the-loop</div><span class="text-link muted" data-i18n="privateWork">Projet en cours · détails à venir</span></article>
+          <article class="project-card"><div class="project-index">04 / 05</div><div class="project-meta"><span>Java · Spring Boot · PostgreSQL</span></div><h3>Agile<br><em>Tracker</em></h3><p data-i18n="agileDesc">Backend de gestion des équipes, backlogs, sprints, tâches et temps en architecture microservices.</p><div class="stack-list stack-list--small"><span class="stack-chip"><img loading="lazy" src="assets/logos/java.svg" alt="" aria-hidden="true">Java</span><span class="stack-chip"><img loading="lazy" src="assets/logos/postgresql.svg" alt="" aria-hidden="true">PostgreSQL</span><span class="stack-chip"><img loading="lazy" src="assets/logos/docker.svg" alt="" aria-hidden="true">Docker</span><span class="stack-chip"><img loading="lazy" src="assets/logos/springboot.svg" alt="" aria-hidden="true">Spring Boot</span><span class="stack-chip"><img loading="lazy" src="assets/logos/swagger.svg" alt="" aria-hidden="true">Swagger</span><span class="stack-chip"><img loading="lazy" src="assets/logos/postman.svg" alt="" aria-hidden="true">Postman</span></div><div class="tag-line">Java 17 · Spring Boot/JPA · PostgreSQL · Docker Compose</div><a class="text-link" href="https://github.com/Ihssan-Salma/agile-tracker" target="_blank" rel="noreferrer"><span data-i18n="viewRepo">Voir le dépôt</span> <span>↗</span></a></article>
+          <article class="project-card"><div class="project-index">05 / 05</div><div class="project-meta"><span>Academic team project</span></div><h3>eGrading<br><em>platform</em></h3><p data-i18n="egradingDesc">Plateforme d'évaluation académique avec espaces administrateur, enseignant et étudiant pour publier les travaux, déposer les réponses, corriger et consulter les retours.</p><div class="stack-list stack-list--small"><span class="stack-chip"><img loading="lazy" src="assets/logos/react.svg" alt="" aria-hidden="true">React / TypeScript</span><span class="stack-chip"><img loading="lazy" src="assets/logos/springboot.svg" alt="" aria-hidden="true">Spring Boot</span><span class="stack-chip"><img loading="lazy" src="assets/logos/mysql.svg" alt="" aria-hidden="true">MySQL</span><span class="stack-chip"><img loading="lazy" src="assets/logos/mongodb.svg" alt="" aria-hidden="true">MongoDB</span><span class="stack-chip"><img loading="lazy" src="assets/logos/centos.svg" alt="" aria-hidden="true">CentOS</span><span class="stack-chip"><img loading="lazy" src="assets/logos/nginx.svg" alt="" aria-hidden="true">Nginx</span></div><div class="tag-line">Administrator · teacher · student areas</div><a class="text-link" href="https://github.com/eayzaid/eGrading" target="_blank" rel="noreferrer"><span data-i18n="viewRepo">Voir le dépôt</span> <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
 
-                    <h1 class="title">
-                        <span class="outline-text">Salma</span>
-                        <span class="solid-text">IHSSAN</span>
-                    </h1>
-                    <h2 class="subtitle" data-i18n="hero_role">Élève ingénieure en 3ème année en IA</h2>
-                    <p class="description" data-i18n="hero_desc">Élève-ingénieure en double cursus, je combine une formation en ingénierie logicielle avec une spécialisation en intelligence artificielle dans le cadre d’un Master 2 à l’École Centrale de Lyon. Cette double compétence me permet de créer des solutions d’intelligence artificielle en m’appuyant sur des bases en ingénierie logicielle. Je suis à la recherche d’un <strong style="color: var(--primary-color);">stage de fin d’études (PFE) à partir d’avril 2027. Mobilité : France.</strong></p>
-                    <div class="hero-actions">
-                        <a href="assets/CV____Salma__Ihssan.pdf" target="_blank" rel="noopener noreferrer" download="CV_Salma_Ihssan.pdf" class="btn btn-primary">
-                            <i class='bx bx-download'></i>
-                            <span data-i18n="btn_resume">Télécharger le CV</span>
-                        </a>
-                        <a href="mailto:salma.ihssan.pro@gmail.com" class="btn btn-outline"><i class="bx bx-envelope" aria-hidden="true"></i><span data-i18n="btn_get_in_touch">CONTACTEZ-MOI</span></a>
-                        <a href="tel:+33745207418" class="hero-contact-link"><i class="bx bx-phone" aria-hidden="true"></i>+33 7 45 20 74 18</a>
-                        <div class="hero-socials">
-                            <a href="https://linkedin.com/in/ihssan-salma" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
-                            <a href="https://github.com/Ihssan-Salma" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+    <section class="section experience-section" id="experience"><div class="timeline"><article><div class="timeline-date">Été 2026</div><div><div class="institution-mark institution-mark--bank" aria-label="Attijariwafa bank"><img src="assets/attijariwafa-bank-logo.png" alt="Logo Attijariwafa bank" decoding="async"></div><h3>Attijariwafa bank</h3><p class="role">AI &amp; Data internship</p><p data-i18n="attijariDesc">Analyse de réclamations bancaires avec Llama 3, LangGraph, RAG et MCP : extraction d'informations, évaluation de l'insatisfaction et de la sensibilité, priorisation, alertes urgentes et détection / masquage de données personnelles.</p></div></article><article><div class="timeline-date">Été 2025</div><div><div class="institution-mark institution-mark--adm" aria-label="Autoroutes du Maroc"><img src="assets/autoroutes-du-maroc-logo.jpg" alt="Logo Autoroutes du Maroc" decoding="async"></div><h3>Autoroutes du Maroc</h3><p class="role">Data Analyst internship</p><p data-i18n="admDesc">Analyse de données historiques de trafic 2022–2024, modélisation en schéma en étoile, mesures DAX et tableaux de bord Power BI pour faire ressortir des tendances de congestion.</p></div></article></div></section>
 
-                </div>
-            </div>
-        </section>
+    <section class="section certification-section" id="certifications"><div class="certification-grid">
+      <article class="certification-card"><div class="certification-logo"><img src="assets/logos/lpi.svg" alt="Logo Linux Professional Institute"></div><div><p class="certification-type">Certification</p><h3>Linux Essentials</h3><p>Linux Professional Institute</p></div><a class="text-link" href="https://www.credly.com/badges/5400a7d5-89d5-49b1-a71e-8aaf54b0e48b/public_url" target="_blank" rel="noreferrer">Vérifier le badge <span>↗</span></a></article>
+      <article class="certification-card"><div class="certification-logo"><img src="assets/logos/huggingface.svg" alt="Logo Hugging Face"></div><div><p class="certification-type">Course completion</p><h3>Agents Fundamentals</h3><p>Hugging Face</p></div><a class="text-link" href="https://huggingface.co/datasets/agents-course/certificates/blob/main/certificates/salmaih/2026-10-17.png" target="_blank" rel="noreferrer">Voir le certificat <span>↗</span></a></article>
+      <article class="certification-card"><div class="certification-logo"><img src="assets/logos/datacamp.svg" alt="Logo DataCamp"></div><div><p class="certification-type">Statement of accomplishment</p><h3>Designing Agentic Systems with LangChain</h3><p>DataCamp</p></div><a class="text-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/d9899d355a320f40cf53a182390254703f7ba7d4" target="_blank" rel="noreferrer">Voir le credential <span>↗</span></a></article>
+      <article class="certification-card"><div class="certification-logo"><img src="assets/logos/datacamp.svg" alt="Logo DataCamp"></div><div><p class="certification-type">Statement of accomplishment</p><h3>Multi-Agent Systems with LangGraph</h3><p>DataCamp</p></div><a class="text-link" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/df306e396b22c0705bb246458791d503b68e1644" target="_blank" rel="noreferrer">Voir le credential <span>↗</span></a></article>
+      <article class="certification-card"><div class="certification-logo"><img src="assets/logos/anthropic.svg" alt="Logo Anthropic"></div><div><p class="certification-type">Course completion</p><h3>Introduction to Model Context Protocol</h3><p>Claude Academy</p></div><a class="text-link" href="https://academy.claude.com/verify/88cbe4e292344c2d66c1b2365d3fd516" target="_blank" rel="noreferrer">Vérifier le certificat <span>↗</span></a></article>
+    </div></section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="section-container">
-                <h2 class="section-title"><span data-i18n="section_experience">Expérience</span>
-                </h2>
-                <div class="experience-grid">
-                    <!-- Experience Card 1 -->
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h3 data-i18n="exp1_role">Stagiaire Ingénieure IA</h3>
-                            <span class="exp-date" data-i18n="exp1_date">Été 2026</span>
-                        </div>
-                        <div class="exp-company-group">
-                            <a href="https://www.attijariwafabank.com/fr" target="_blank" rel="noopener noreferrer" class="company-link">
-                                <img src="assets/attijariwafa-logo.jpg" alt="Attijariwafa bank logo" class="company-logo">
-                            </a>
-                            <a href="https://www.attijariwafabank.com/fr" target="_blank" rel="noopener noreferrer" class="company-link-text">
-                                <h4 class="exp-company" data-i18n="exp1_company">Attijariwafa bank – Casablanca, Maroc</h4>
-                            </a>
-                        </div>
-                        <p class="exp-desc" data-i18n="exp1_desc">Travail sur un système bancaire de traitement des réclamations basé sur l'IA, en utilisant Llama 3, LangGraph, RAG et MCP pour extraire des informations, évaluer l'insatisfaction et la sensibilité, déterminer la priorité des réclamations et déclencher des alertes pour les cas urgents. Implémentation de la détection et du masquage des PII pour assurer la sécurité des données.</p>
+    <section class="section two-column" id="apropos"><div class="path-content"><div class="education"><div class="label" data-i18n="education">Formation</div><div class="institution-mark institution-mark--school"><img loading="lazy" src="assets/centrale-lyon-logo.webp" alt="Logo Centrale Lyon"></div><h3>École Centrale de Lyon</h3><p data-i18n="centraleStudy">3e année du cycle ingénieur · option Informatique<br>Master 2 Intelligence Artificielle · 2026–2027</p><div class="institution-mark institution-mark--school"><img loading="lazy" src="assets/ensam-meknes-logo.png" alt="Logo ENSAM Meknès"></div><h3>ENSAM Meknès</h3><p data-i18n="ensamStudy">Cycle ingénieur · génie logiciel et systèmes intelligents · 2024–2026<br>Classes préparatoires intégrées · 2022–2024</p></div></div></section>
 
-                        <div class="exp-image-wrapper">
-                            <img src="assets/architecture-diagram-v2.png" alt="System Architecture Diagram" class="exp-diagram">
-                        </div>
-                    </div>
-
-                    <!-- Experience Card 2 -->
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h3 data-i18n="exp2_role">Stagiaire Data Analyst</h3>
-                            <span class="exp-date" data-i18n="exp2_date">Été 2025</span>
-                        </div>
-                        <div class="exp-company-group">
-                            <a href="https://www.adm.co.ma/fr" target="_blank" rel="noopener noreferrer" class="company-link">
-                                <img src="assets/autoroutes-logo.png" alt="Autoroutes du Maroc logo" class="company-logo">
-                            </a>
-                            <a href="https://www.adm.co.ma/fr" target="_blank" rel="noopener noreferrer" class="company-link-text">
-                                <h4 class="exp-company" data-i18n="exp2_company">Autoroutes du Maroc – Rabat, Maroc</h4>
-                            </a>
-                        </div>
-                        <p class="exp-desc" data-i18n="exp2_desc">Analyse prédictive du trafic à partir de données historiques (2022-2024) pour analyser les modèles de congestion. Modélisation de schémas en étoile, création de mesures DAX et conception de tableaux de bord Power BI interactifs avec visualisations avancées pour soutenir les décisions stratégiques, tout en garantissant la confidentialité des données.</p>
-
-                        <div class="exp-images-carousel">
-                            <img src="assets/autoroutes-dashboard.jpg" alt="Traffic Analysis Dashboard" class="exp-carousel-img">
-                            <img src="assets/autoroutes-presentation.jpg" alt="Traffic Analysis Presentation" class="exp-carousel-img">
-                        </div>
-                    </div>
-
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h3 data-i18n="exp3_role">Entrepreneuriat - Projet académique en groupe (ECL)</h3>
-                        </div>
-                        <div class="exp-company-group">
-                            <a href="https://www.groupama.com/" target="_blank" rel="noopener noreferrer" class="company-link">
-                                <img src="assets/Groupama_logo.png" alt="Groupama logo" class="company-logo">
-                            </a>
-                            <a href="https://www.groupama.com/" target="_blank" rel="noopener noreferrer" class="company-link-text">
-                                <h4 class="exp-company" data-i18n="exp3_company">En collaboration avec Groupama</h4>
-                            </a>
-                        </div>
-                        <p class="exp-desc" data-i18n="exp3_desc">Projet académique d'entrepreneuriat mené en groupe à l'ECL, en collaboration avec Groupama, pour anticiper les besoins des agriculteurs à l'horizon 2040.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="section-container">
-                <h2 class="section-title"><span data-i18n="section_projects">Projets</span>
-                </h2>
-
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3 data-i18n="proj7_title">Reslot AI</h3>
-                            <p class="project-subtitle" data-i18n="proj7_subtitle">ECL, France - 2026</p>
-                            <div class="project-features">
-                                <ul>
-                                    <li><span data-i18n="proj7_feat1">Système multi-agents pour aider les entreprises à retrouver des clients après une annulation de réservation de dernière minute.</span></li>
-                                    <li><span data-i18n="proj7_feat2">Quatre agents coordonnent la vérification, la sélection des candidats, la communication et le contrôle de disponibilité, avec Gmail, Google Calendar et Sheets.</span></li>
-                                    <li><span data-i18n="proj7_feat3">À partir d’une annulation vérifiée par un responsable, le système prépare une recommandation de confirmation, avec contrôle des disponibilités et du consentement des clients.</span></li>
-                                </ul>
-                            </div>
-                            <div class="tech-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">LangGraph</span>
-                                <span class="tag">FastAPI</span>
-                                <span class="tag">MCP</span>
-                                <span class="tag">PostgreSQL</span>
-                            </div>
-                            <a href="https://github.com/Ihssan-Salma/reslot-ai" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-github-link">
-                                <i class="bx bxl-github" aria-hidden="true"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3 data-i18n="proj1_title">Système de Détection d'Émotions</h3>
-                            <p class="project-subtitle" data-i18n="proj1_subtitle">ENSAM Meknès – 2026</p>
-                            <div class="project-features">
-                                <ul>
-                                    <li><span data-i18n="proj1_feat1">Classification de sept expressions faciales à partir des images en niveaux de gris du jeu FER2013.</span></li>
-                                    <li><span data-i18n="proj1_feat2">CNN personnalisé avec TensorFlow/Keras : augmentation des images, pondération des classes et évaluation par matrices de confusion et scores F1.</span></li>
-                                    <li><span data-i18n="proj1_feat3">Démonstration sur vidéo avec OpenCV : détection des visages, suivi par identifiant et lissage des prédictions. Un outil expérimental de classification des expressions.</span></li>
-                                </ul>
-                            </div>
-
-                            <div class="tech-tags">
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">Keras</span>
-                                <span class="tag">OpenCV</span>
-                                <span class="tag">FER2013</span>
-                            </div>
-                            <a href="https://github.com/Ihssan-Salma/DL_facial_emotion_recognition_project" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-github-link">
-                                <i class="bx bxl-github" aria-hidden="true"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3 data-i18n="proj2_title">eGrading – Plateforme d'Évaluation Académique</h3>
-                            <p class="project-subtitle" data-i18n="proj2_subtitle">ENSAM Meknès – 2025</p>
-                            <div class="project-features">
-                                <ul>
-                                    <li><span data-i18n="proj2_feat1">Plateforme pédagogique réunissant administrateurs, enseignants et étudiants dans des espaces adaptés à leurs rôles.</span></li>
-                                    <li><span data-i18n="proj2_feat2">Création et diffusion des travaux, dépôt des réponses, correction et consultation des retours. API Spring Boot, interface React/TypeScript, MySQL et MongoDB.</span></li>
-                                </ul>
-                            </div>
-
-                            <div class="tech-tags">
-                                <span class="tag">Spring Boot</span>
-                                <span class="tag">React</span>
-                                <span class="tag">TypeScript</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">MongoDB</span>
-                            </div>
-                            <a href="https://github.com/eayzaid/eGrading" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-github-link">
-                                <i class="bx bxl-github" aria-hidden="true"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3 data-i18n="proj4_title">Agile Tracker - Plateforme de gestion de projet</h3>
-                            <div class="project-features">
-                                <ul>
-                                    <li><span data-i18n="proj4_feat1">Backend de gestion Agile en microservices : utilisateurs, projets et équipes, backlog, sprints, tâches et suivi du temps. Architecture Spring Boot/JPA, bases PostgreSQL séparées par domaine et environnement Docker Compose.</span></li>
-                                </ul>
-                            </div>
-                            <div class="tech-tags">
-                                <span class="tag">Java 17</span>
-                                <span class="tag">Spring Boot</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">Docker Compose</span>
-                            </div>
-                            <a href="https://github.com/Ihssan-Salma/agile-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-github-link">
-                                <i class="bx bxl-github" aria-hidden="true"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3 data-i18n="proj5_title">SmartHome - Simulation avec Packet Tracer</h3>
-                            <div class="project-features">
-                                <ul>
-                                    <li><span data-i18n="proj5_feat1">Simulation d’un réseau domestique connecté dans Cisco Packet Tracer. Le fichier iot_project.pkt permet d’explorer la topologie, d’inspecter les échanges entre équipements IoT et de suivre les paquets en mode simulation.</span></li>
-                                </ul>
-                            </div>
-                            <div class="tech-tags">
-                                <span class="tag">Cisco Packet Tracer</span>
-                                <span class="tag">IoT</span>
-                                <span class="tag">Simulation réseau</span>
-                            </div>
-                            <a href="https://github.com/Ihssan-Salma/SMART-HOME" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-github-link">
-                                <i class="bx bxl-github" aria-hidden="true"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack Section -->
-        <section id="techstack" class="section">
-            <div class="section-container">
-                <div class="section-header-centered">
-                    <h2 class="section-title" data-i18n="section_techstack">Technologies</h2>
-                </div>
-                <div class="tech-detailed-grid">
-                    <div class="tech-category-card">
-                        <h3 class="tech-category-title" data-i18n="tech_ai_data">IA et Data</h3>
-                        <div class="tech-icons-list">
-                            <div class="tech-badge"><i class="devicon-python-plain colored"></i> Python</div>
-                            <div class="tech-badge">LLMs</div>
-                            <div class="tech-badge">LangChain</div>
-                            <div class="tech-badge">LangGraph</div>
-                            <div class="tech-badge">RAG</div>
-                            <div class="tech-badge">MCP</div>
-                            <div class="tech-badge"><i class="devicon-pytorch-original colored"></i> PyTorch</div>
-                            <div class="tech-badge"><i class="devicon-tensorflow-original colored"></i> TensorFlow</div>
-                            <div class="tech-badge">CNNs</div>
-                            <div class="tech-badge"><i class="devicon-opencv-plain colored"></i> OpenCV</div>
-                            <div class="tech-badge"><i class="devicon-pandas-original colored"></i> Pandas</div>
-                            <div class="tech-badge"><i class="devicon-numpy-original colored"></i> NumPy</div>
-                            <div class="tech-badge">scikit-learn</div>
-                            <div class="tech-badge">Power BI</div>
-                        </div>
-                    </div>
-                    <div class="tech-category-card">
-                        <h3 class="tech-category-title" data-i18n="tech_software">Génie Logiciel</h3>
-                        <div class="tech-icons-list">
-                            <div class="tech-badge"><i class="devicon-mysql-plain colored"></i> SQL</div>
-                            <div class="tech-badge"><i class="devicon-mongodb-plain colored"></i> NoSQL</div>
-                            <div class="tech-badge"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
-                            <div class="tech-badge"><i class="devicon-java-plain colored"></i> Java</div>
-                            <div class="tech-badge"><i class="devicon-cplusplus-plain colored"></i> C++</div>
-                            <div class="tech-badge"><i class="devicon-docker-plain colored"></i> Docker</div>
-                            <div class="tech-badge"><i class="devicon-prometheus-original colored"></i> Prometheus</div>
-                            <div class="tech-badge"><i class="devicon-grafana-original colored"></i> Grafana</div>
-                            <div class="tech-badge"><i class="devicon-git-plain colored"></i> Git</div>
-                            <div class="tech-badge"><i class="devicon-linux-plain colored"></i> Linux</div>
-                            <div class="tech-badge"><i class="devicon-fastapi-plain colored"></i> FastAPI</div>
-                        </div>
-                    </div>
-                    <div class="tech-category-card">
-                        <h3 class="tech-category-title" data-i18n="tech_project">Gestion de Projet</h3>
-                        <div class="tech-icons-list">
-                            <div class="tech-badge">Agile</div>
-                            <div class="tech-badge">Scrum</div>
-                            <div class="tech-badge"><i class="devicon-jira-plain colored"></i> Jira</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <div class="section-container">
-                <h2 class="section-title"><span data-i18n="section_education">Éducation</span>
-                </h2>
-
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="edu-info">
-                                <span class="timeline-date">2026 - 2027</span>
-                                <h3 data-i18n="edu1_degree">Étudiante en Master - Intelligence Artificielle</h3>
-                                <h4 data-i18n="edu1_school">École Centrale de Lyon (ECL) - Lyon, France</h4>
-                            </div>
-                            <img src="assets/logo-eclyon.png" alt="École Centrale de Lyon Logo" class="edu-logo">
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="edu-info">
-                                <span class="timeline-date">2026 - 2027</span>
-                                <h3 data-i18n="edu2_degree">Étudiante Ingénieure Généraliste – Option Informatique</h3>
-                                <h4 data-i18n="edu2_school">École Centrale de Lyon (ECL) - Lyon, France</h4>
-                            </div>
-                            <img src="assets/logo-eclyon.png" alt="École Centrale de Lyon Logo" class="edu-logo">
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="edu-info">
-                                <span class="timeline-date">2022 - 2026</span>
-                                <h3 data-i18n="edu3_degree">Étudiante Ingénieure en Logiciel et Systèmes Intelligents</h3>
-                                <h4 data-i18n="edu3_school">École Nationale Supérieure d’Arts et Métiers (ENSAM) - Meknès, Maroc</h4>
-                            </div>
-                            <img src="assets/logo-ensam-fixed.png" alt="ENSAM Logo" class="edu-logo">
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="edu-info">
-                                <span class="timeline-date">2021 - 2022</span>
-                                <h3 data-i18n="edu4_degree">Baccalauréat en Sciences Mathématiques A</h3>
-                                <h4 data-i18n="edu4_school">Lycée d'Excellence Mohammed VI - Benguérir, Maroc</h4>
-                            </div>
-                            <img src="assets/logo-lydex-fixed.png" alt="Lydex Logo" class="edu-logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications & Languages -->
-        <section id="certs" class="section double-column">
-            <div class="section-container split">
-                <div class="left-col">
-                    <h2 class="section-title"><span data-i18n="section_certs">Certifications</span>
-                    </h2>
-                    <div class="activities-container">
-                        <div class="cert-list">
-                            <div class="cert-card">
-                                <a href="https://www.credly.com/badges/5400a7d5-89d5-49b1-a71e-8aaf54b0e48b/public_url" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <img src="assets/linux-logo.png" alt="Linux Essentials" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0;">
-                                    <div class="cert-info">
-                                        <strong data-i18n="cert1_name">Linux Essentials</strong>
-                                        <span class="subtext" data-i18n="cert1_org">Linux Professional Institute (Mai 2026)</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cert-card">
-                                <a href="https://huggingface.co/datasets/agents-course/certificates/blob/main/certificates/salmaih/2026-10-17.png" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <img src="assets/huggingface-agents-certificate.webp" alt="Hugging Face - Fundamentals of Agents" loading="lazy" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0; border-radius: 8px;">
-                                    <div class="cert-info">
-                                        <strong data-i18n="cert2_name">Fundamentals of Agents</strong>
-                                        <span class="subtext" data-i18n="cert2_org">Hugging Face Agents Course (17 octobre 2026)</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cert-card">
-                                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/d9899d355a320f40cf53a182390254703f7ba7d4" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <span class="cert-icon" aria-hidden="true"><i class="bx bx-link-external"></i></span>
-                                    <div class="cert-info">
-                                        <strong data-i18n="cert3_name">Designing Agentic Systems with LangChain</strong>
-                                        <span class="subtext" data-i18n="cert3_org">DataCamp — October 2026</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cert-card">
-                                <a href="https://academy.claude.com/verify/88cbe4e292344c2d66c1b2365d3fd516" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <span class="cert-icon" aria-hidden="true"><i class="bx bx-link-external"></i></span>
-                                    <div class="cert-info">
-                                        <strong data-i18n="cert4_name">Introduction to Model Context Protocol</strong>
-                                        <span class="subtext" data-i18n="cert4_org">Claude Academy</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="right-col">
-                    <h2 class="section-title"><span data-i18n="section_languages">Langues</span>
-                    </h2>
-                    <div class="lang-container">
-                        <div class="lang-item">
-                            <div class="lang-header">
-                                <strong data-i18n="lang_en">Anglais</strong>
-                                <span class="subtext" data-i18n="lang_written_spoken">B2</span>
-                            </div>
-                        </div>
-                        <div class="lang-item">
-                            <div class="lang-header">
-                                <strong data-i18n="lang_fr">Français</strong>
-                                <span class="subtext" data-i18n="lang_written_spoken">B2</span>
-                            </div>
-                        </div>
-                        <div class="lang-item">
-                            <div class="lang-header">
-                                <strong data-i18n="lang_ar">Arabe</strong>
-                                <span class="subtext" data-i18n="lang_native">Langue maternelle</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="activities" class="section">
-            <div class="section-container">
-                <h2 class="section-title" data-i18n="section_activities">Activités</h2>
-                <div class="cert-list">
-                            <div class="cert-card">
-                                <a href="https://www.linkedin.com/company/gadz-it/posts/?feedView=all" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <img src="assets/gadz_it_logo.jpg" alt="Gadz'it" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0; border-radius: 8px;">
-                                    <div class="cert-info">
-                                        <strong data-i18n="act1">Membre Actif, Club d'Informatique Gadz'it (ENSAM).</strong>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cert-card">
-                                <a href="https://www.linkedin.com/company/social-arts-et-metiers/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <img src="assets/social_arts_et_mtiers_logo.jpg" alt="Social Arts et Métiers" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0; border-radius: 8px;">
-                                    <div class="cert-info">
-                                        <strong data-i18n="act2">Membre Actif, Club Social (ENSAM).</strong>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cert-card">
-                                <a href="https://www.linkedin.com/company/club-robotique-et-innovation-arts-et-metiers/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <img src="assets/logo_Robotique.jpg" alt="CRI" style="width: 45px; height: 45px; object-fit: contain; flex-shrink: 0; border-radius: 8px;">
-                                    <div class="cert-info">
-                                        <strong data-i18n="act3">Membre Actif, Club Robotique de l'ENSAM (CRI).</strong>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cert-card">
-                                <a href="https://www.linkedin.com/company/reformeadministration/posts/?feedView=all" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <img src="assets/ramadan-hackathon.png" alt="Ramadan AI Hackathon" style="width: 45px; height: 45px; object-fit: cover; flex-shrink: 0; border-radius: 8px;">
-                                    <div class="cert-info">
-                                        <strong data-i18n="act4">Participante, Ramadan IA Hackathon 2026 (Ministère de la Transition Numérique).</strong>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cert-card">
-                                <a href="https://www.linkedin.com/posts/pauline-verin_hackathon-aidant-ia-share-7505927203583356928-44xk/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; width: 100%;">
-                                    <img src="assets/hackathon-aidant-2026.png" alt="Hackathon Aidant 2026 - Sopra Steria et Cr&#233;dit Agricole" loading="lazy" style="display: block; width: 45px; height: 45px; object-fit: cover; flex-shrink: 0; border-radius: 8px;">
-                                    <div class="cert-info">
-                                        <strong data-i18n="act5">Participante au Hackathon Aidant 2026 (organisé par Sopra Steria et Crédit Agricole).</strong>
-                                    </div>
-                                </a>
-                            </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-
-    <script src="js/translations.js?v=20"></script>
-    <script src="js/main.js?v=4"></script>
+    <section class="section engagement-section" id="engagements"><div class="engagement-grid"><article><p class="engagement-meta">2026 · Groupama / Centrale Lyon</p><h3 data-i18n="groupamaTitle">Prospective agricole</h3><p data-i18n="groupamaDesc">Étude des besoins agricoles à l’horizon 2040, proposition de valeur, modèle économique et pitch collectif.</p></article><article><p class="engagement-meta">2026 · Sopra Steria · Crédit Agricole · AWS</p><h3>AIdant</h3><p data-i18n="aidantParticipation">Projet proposé en équipe pour faciliter la coordination d’un réseau d’aidants accompagnant un proche en situation de dépendance.</p><p data-i18n="aidantContext">Définition des besoins, prise en compte des disponibilités et proposition d’une répartition des tâches. Les membres peuvent accepter les missions et suivre leur réalisation dans un planning partagé.</p></article>
+      <article><p class="engagement-meta">2026 · Hackathon</p><h3>Ramadan IA</h3><p data-i18n="ramadanParticipation">Assistant touristique intelligent proposé en équipe, inspiré de TripAdvisor, pour découvrir une région selon les préférences du visiteur.</p><p data-i18n="ramadanContext">IA générative et RAG pour rechercher des informations touristiques pertinentes. L’interface conversationnelle prend en compte les envies, le budget, la durée du séjour et les centres d’intérêt pour suggérer lieux, activités, spécialités locales et itinéraires adaptés.</p></article><article><p class="engagement-meta">ENSAM Meknès</p><h3 data-i18n="communityTitle">Vie associative</h3><p data-i18n="communityDesc">Membre active de Gadz’IT et du club social de l’ENSAM.</p></article></div></section>
+    <section class="contact-section" id="contact"><div><h2 data-i18n="contactTitle">Je cherche un stage de fin d’études de six mois en ingénierie IA, IA agentique ou génie logiciel à partir d’avril 2027.</h2></div><div class="contact-links"><a href="https://github.com/Ihssan-Salma" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://linkedin.com/in/ihssan-salma" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></section>
+  </main>
+  <footer aria-hidden="true"></footer>
+  <script src="script.js?v=4"></script>
+  <script src="interactions.js?v=29"></script>
+  <script src="electric.js?v=14"></script>
+  <script src="story-data.js"></script>
+  <script src="cinema.js?v=15"></script>
+  <script src="french-polish.js?v=8"></script>
+  <script src="screens.js?v=10"></script>
 </body>
 </html>
-

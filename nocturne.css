@@ -1,0 +1,114 @@
+/* Pure black, pure white and #cc00ff. Existing content and geometry preserved. */
+:root{color-scheme:dark;--paper:#000000;--ink:#ffffff;--muted:#ffffffb3;--line:#ffffff26;--blue:#cc00ff;--cyan:#cc00ff;--dark:#000000;--ivory:#ffffff;--black-wine:#000000;--burgundy:#cc00ff;--wine:#cc00ff;--taupe:#ffffff26;--ice:#cc00ff;--heading:var(--portfolio-font);--shadow:0 20px 55px #0003;--surface:#000000;--surface-raised:#000000}
+html,body{background:#000000;color:#ffffff}
+body{background:#000000;font-family:var(--portfolio-font)}
+::selection{background:#cc00ff;color:#000000}
+*{scrollbar-color:#ffffff66 transparent;scrollbar-width:thin}
+:focus-visible{outline:2px solid #cc00ff;outline-offset:5px}
+a{color:#cc00ff}button,input,select{font-family:inherit}
+h1,h2,h3,h4{font-family:var(--portfolio-font);letter-spacing:-.035em}
+/* Earlier presentation layers set their own font shorthands on individual labels. */
+:is(.site-header,main#contenu,.screen-pager,.screen-details,.technical-dialog,.story-player) :not(code):not(pre){font-family:var(--portfolio-font)!important}
+.hero,.tech-section,.projects-section,.experience-section,.certification-section,.two-column,.engagement-section,.contact-section,footer{--paper:#000000;--ink:#ffffff;--muted:#ffffffb3;--line:#ffffff26;--blue:#cc00ff;--cyan:#cc00ff;color-scheme:dark}
+main#contenu>section,#projets,#experience,#certifications,#apropos,#engagements,#contact{background:transparent;color:#ffffff}
+main#contenu>section{padding-top:28px;padding-bottom:28px}
+.site-header{background:#000000;border-bottom:0;backdrop-filter:blur(18px);box-shadow:none}
+.site-header nav{gap:25px;background:transparent;border:0;box-shadow:none}.site-header nav a{color:#ffffffb3;font-size:12px;font-weight:500;letter-spacing:0;transition:color .2s}
+.site-header nav a:hover,.site-header nav a[aria-current=page]{color:#ffffff}.site-header nav a::after{background:#cc00ff;height:2px}
+.language-toggle,.menu-toggle{background:#000000;border:1px solid #ffffff26;color:#ffffff;border-radius:10px;min-width:44px;box-shadow:none}
+.language-toggle:hover,.menu-toggle:hover{background:#cc00ff14;border-color:#cc00ff}
+.skip-link{background:#cc00ff;color:#000000}
+footer{background:transparent!important;backdrop-filter:none;pointer-events:none;border:0}
+.screen-pager{color:#ffffffb3;gap:13px}.screen-pager button{width:40px;height:36px;padding:0;background:#000000;border:1px solid #ffffff26;border-radius:10px;color:#ffffff;box-shadow:none;transition:border-color .2s,background .2s}
+.screen-pager button:hover:not(:disabled){background:#cc00ff14;border-color:#cc00ff}.screen-pager button:disabled{opacity:.28}
+.screen-selector{gap:10px}.screen-selector button{border:1px solid #ffffff26;border-radius:10px;background:#000000;color:#ffffffb3;font-size:12px;padding:10px 14px;box-shadow:none}
+.screen-selector button:hover{border-color:#cc00ff;color:#ffffff}.screen-selector button[aria-pressed=true]{background:#cc00ff;color:#000000;border-color:#cc00ff}
+/* A quiet portrait, strong name, and the existing information hierarchy. */
+#top{grid-template-columns:1.05fr .95fr;gap:28px;isolation:isolate}
+#top::after{content:none}
+#top .career-hero-intro{max-width:660px;gap:28px;align-self:center;position:relative;z-index:1}
+#top .hero-discipline{margin:0 0 24px;letter-spacing:0;text-transform:none;color:#cc00ff;line-height:1.2}
+.hero-name{display:block;font-size:clamp(36px,4vw,58px);font-weight:600;line-height:1.08;letter-spacing:-.055em;color:#ffffff;margin:0 0 14px}
+.hero-field{display:block;font:500 12px/1.6 var(--portfolio-font);letter-spacing:.07em;color:#cc00ff}
+#top .career-title{font-size:clamp(28px,3.2vw,44px);font-weight:500;line-height:1.2;letter-spacing:-.025em;margin:0;color:#ffffff;text-transform:none}
+#top .career-title span{display:block}#top .career-title span:not(:first-child){font-size:16px;color:#ffffffb3;letter-spacing:0;font-weight:400;line-height:1.6}
+.career-opportunity{padding:17px 20px;border:1px solid #ffffff26;border-left:2px solid #cc00ff;border-radius:0 12px 12px 0;background:#000000;box-shadow:none}
+.career-opportunity .career-label{color:#cc00ff;font:500 10px/1.6 var(--portfolio-font);letter-spacing:.08em}
+.career-opportunity strong{color:#ffffff;font-size:19px;font-weight:500}.career-opportunity span:not(.career-label){color:#ffffffb3;font-size:12px}
+.hero-actions{gap:10px}.button,.button-quiet{border-radius:9px;color:#ffffff;background:transparent;border:1px solid #ffffff26;box-shadow:none;font:500 12px/1.4 var(--portfolio-font);padding:13px 18px}
+.button-primary,.hero-actions .button-primary{background:#cc00ff;border-color:#cc00ff;color:#000000}
+#top .hero-actions .button-primary{background:#cc00ff;border-color:#cc00ff;color:#000000}
+.button:hover,.button-quiet:hover{background:#cc00ff14;color:#ffffff;border-color:#cc00ff;transform:translateY(-2px)}.button-primary:hover{background:#cc00ff;color:#000000}
+#top .career-portrait-shell{height:100%;min-height:0;align-self:end;position:relative;padding:24px 12px 0 0;isolation:isolate}
+#top .career-portrait-frame{height:100%;width:100%;min-height:0;background:none;position:relative;overflow:hidden;align-items:end;justify-content:center;border-radius:0;box-shadow:none}
+#top .career-portrait-frame::before{content:none;display:none}
+#top .career-portrait{width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 15px 24px #0005);mask-image:linear-gradient(#000 90%,transparent)}
+/* Project navigation and embedded players use the same visual surfaces. */
+#projets .screen-selector{gap:24px;border-bottom:1px solid #ffffff26;margin-bottom:28px;background:none}
+#projets .screen-selector button{color:#ffffffb3;background:none;border-radius:0;border:0;border-bottom:2px solid transparent;padding:12px 0}
+#projets .screen-selector button:hover{color:#ffffff}#projets .screen-selector button[aria-pressed=true]{color:#cc00ff;border-bottom-color:#cc00ff;background:none}
+#projets article{gap:14px 40px;background:none;border:0;box-shadow:none}
+#projets article h3,#projets article h3 em,#projets article h3 span{font-family:var(--portfolio-font);font-size:clamp(30px,3.5vw,48px);font-weight:600;font-style:normal;color:#ffffff;letter-spacing:-.05em;line-height:1.08}
+#projets .project-index{color:#ffffffb3;font:10px var(--portfolio-font);letter-spacing:.08em}
+#projets article>p{color:#ffffffb3;line-height:1.85;font-size:14px}
+#projets .stack-list{gap:8px;margin:8px 0 18px}.stack-chip,#projets .stack-chip{color:#ffffffb3;background:#000000;border:1px solid #ffffff26;border-radius:7px;padding:5px 8px;font-size:11px}
+#projets .stack-chip img{width:19px;height:19px;background:#ffffff;border-radius:4px;padding:2px;filter:none}
+#projets .text-link,#projets summary{color:#cc00ff}.text-link{color:#cc00ff}#projets details{border-color:#ffffff26}
+#projets article>iframe,#experience .banking-card-frame,#experience .traffic-card-frame{background:#000000;border:0;border-radius:12px;box-shadow:none}
+#projets article>.project-preview{border:0;box-shadow:none}
+.project-preview{background:#000000;border-color:#ffffff26;color:#ffffff}
+/* Technology marks stay on small neutral tiles; brand colors are preserved. */
+#technologies .tech-controls{padding:0 0 20px;border:0;gap:8px}.tech-filter-label{color:#ffffffb3}.tech-filter-result{display:none}
+.tech-filter{background:#000000;border:1px solid #ffffff26;color:#ffffffb3;border-radius:8px;min-height:37px;font:500 11px var(--portfolio-font);padding:8px 13px;box-shadow:none}
+.tech-filter:hover,.tech-filter.is-active{background:#cc00ff;border-color:#cc00ff;color:#000000}
+#technologies .tech-groups{gap:16px}#technologies .tech-group{border:1px solid #ffffff26;background:#000000;border-radius:14px;padding:19px;box-shadow:none}
+.tech-group-heading>span{color:#cc00ff}#technologies .tech-group-heading h3{font-size:15px;line-height:1.55;color:#ffffff;font-weight:500;letter-spacing:-.02em}
+#technologies .tech-item{color:#ffffffb3;background:#000000;border:1px solid #ffffff26;border-radius:8px;padding:6px 8px;gap:8px;max-width:100%;font-size:11px;transition:border-color .2s,background .2s}
+#technologies .tech-item>span:last-child{overflow-wrap:anywhere}#technologies .tech-item:hover,#technologies .tech-item.is-highlighted{background:#cc00ff14;border-color:#cc00ff;color:#ffffff}
+#technologies .tech-logo{background:#ffffff;border-radius:5px;width:26px;height:26px;flex-basis:26px}#technologies .tech-logo img{width:20px;height:20px;filter:none}
+.technology-usage,.technology-usage a{color:#cc00ff}
+/* Experience, credentials, education and engagements. */
+#experience .timeline article{border:0;background:none;padding-top:24px}#experience .timeline-date{color:#cc00ff;font:10px/1.6 var(--portfolio-font)}
+#experience .timeline h3{font:500 clamp(23px,2.5vw,34px)/1.2 var(--portfolio-font);color:#ffffff;letter-spacing:-.04em}
+#experience .timeline .role{color:#cc00ff;font-size:12px}#experience .timeline-details summary{color:#ffffffb3;font-size:12px}
+#experience .institution-mark{border-radius:10px;box-shadow:none;color:#000000}#experience .institution-mark--bank,#experience .institution-mark--adm{height:90px;width:min(100%,280px);margin-bottom:22px}
+#certifications .certification-grid{gap:18px}#certifications .certification-card{background:#000000;border:1px solid #ffffff26;border-radius:14px;padding:22px;gap:12px 18px;box-shadow:none;transition:border-color .2s,background .2s,transform .2s}
+#certifications .certification-card:hover{background:#cc00ff14;border-color:#cc00ff;transform:translateY(-2px)}#certifications .certification-card h3{font-size:17px;color:#ffffff;line-height:1.4;font-weight:500}
+.certification-type,.engagement-meta{color:#cc00ff;font:500 10px/1.6 var(--portfolio-font)}.certification-card p:not(.certification-type){color:#ffffffb3;font-size:12px}
+.certification-logo{background:#ffffff;border-radius:10px}.certification-logo img{filter:none}#certifications .certification-card .text-link{color:#cc00ff;font-size:11px;letter-spacing:0}
+#apropos .path-content{width:100%;grid-column:1/-1}#apropos .education{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:18px 50px;align-content:center}
+#apropos .education>.label{grid-column:1/-1;color:#cc00ff;font:10px var(--portfolio-font);letter-spacing:.08em;margin-bottom:14px}
+#apropos .education>:nth-child(2){grid-column:1;grid-row:2}#apropos .education>:nth-child(3){grid-column:1;grid-row:3}#apropos .education>:nth-child(4){grid-column:1;grid-row:4}
+#apropos .education>:nth-child(5){grid-column:2;grid-row:2}#apropos .education>:nth-child(6){grid-column:2;grid-row:3}#apropos .education>:nth-child(7){grid-column:2;grid-row:4}
+#apropos .institution-mark--school{background:#fff;border:0;border-radius:10px;padding:16px;min-height:78px;margin:0;width:fit-content;max-width:100%}
+#apropos .education h3{font-size:clamp(22px,2.6vw,34px);font-weight:500;color:#ffffff;margin:0;line-height:1.2}#apropos .education p{color:#ffffffb3;line-height:1.9;font-size:14px;margin:0;padding-top:6px;border-top:1px solid #ffffff26}
+#engagements .engagement-grid{gap:20px}#engagements .engagement-grid article{background:#000000;border:1px solid #ffffff26;border-radius:14px;padding:26px;box-shadow:none}
+#engagements .engagement-grid h3{font:500 26px/1.25 var(--portfolio-font);letter-spacing:-.035em;color:#ffffff;margin:10px 0 16px}
+#engagements .engagement-grid article p:not(.engagement-meta){font-size:13px;line-height:1.85;color:#ffffffb3}#engagements .engagement-grid article p:last-child{margin-bottom:0}
+#contact h2{color:#ffffff;font-weight:400;line-height:1.65;max-width:36ch}#contact .contact-links{gap:14px}
+#contact .contact-links a{color:#cc00ff;border-bottom:1px solid #ffffff26;border-top-color:#ffffff26;padding:15px 0;font:500 18px var(--portfolio-font);letter-spacing:-.02em}#contact .contact-links a:hover{color:#cc00ff;border-color:#cc00ff}
+#contact .contact-email,#contact .contact-phone{color:#ffffffb3;border-color:#ffffff26;font-size:14px}
+/* Native overlays inherit the palette without altering their controls. */
+.screen-details,.technical-dialog,.story-player{background:#000000;color:#ffffff;border:1px solid #ffffff26;border-radius:16px;box-shadow:0 30px 100px #0008}
+.screen-details h2,.screen-details h3,.technical-dialog h3{color:#ffffff}.screen-details p,.technical-content{color:#ffffffb3;line-height:1.8}.screen-details>button,.dialog-close{background:#cc00ff14;color:#cc00ff;border-color:#cc00ff;border-radius:8px}
+.screen-details::backdrop,.technical-dialog::backdrop,.story-player::backdrop{background:#000000e6;backdrop-filter:blur(10px)}
+.story-player{--paper:#000000;--ink:#ffffff;--muted:#ffffffb3;--line:#ffffff26;--blue:#cc00ff;--cyan:#cc00ff;color-scheme:dark}.story-topbar,.story-controls{background:#000000;color:#ffffff;border-color:#ffffff26}
+.story-heading,.story-brand,.story-node strong{color:#ffffff}.story-node,.story-node-detail,.story-scene{background:#000000;color:#ffffffb3;border-color:#ffffff26}.story-node.is-active{border-color:#cc00ff;background:#cc00ff14}
+.story-controls button,.story-topbar button{background:#cc00ff14;color:#ffffffb3;border-color:#ffffff26}.story-caption,.story-hint{color:#ffffffb3}
+.story-screen{background:#000000;border-color:#ffffff26;color:#ffffffb3}.story-controls [data-story-play]{background:#cc00ff;color:#000000;border-color:#cc00ff}.story-topbar{background:#000000}
+@media(max-width:1000px){.site-header nav{gap:17px}#technologies .tech-groups{gap:12px}#technologies .tech-group{padding:15px}.hero-name{font-size:clamp(36px,4.8vw,48px)}#top{grid-template-columns:1.1fr .9fr}}
+@media(max-width:700px){
+ .site-header{height:72px}.site-header nav{background:#000000;border:1px solid #ffffff26;border-radius:12px;box-shadow:0 20px 50px #0007}.site-header nav a{color:#ffffffb3;font-size:14px}.site-header nav a[aria-current=page]{color:#cc00ff}
+ .site-header .menu-toggle,.site-header .language-toggle{font-size:12px;min-height:40px;padding:9px 13px}.screen-pager{right:16px;bottom:7px;gap:10px;font-size:10px}.screen-pager button{width:36px;height:33px}
+ main#contenu>section{padding:18px 16px}#top{grid-template-columns:1fr;grid-template-rows:auto minmax(250px,1fr);gap:20px;padding-top:26px}#top .career-hero-intro{gap:22px;padding:0 16px 0 0}
+ .hero-name{font-size:clamp(34px,9vw,46px);margin-bottom:12px}.hero-field{font-size:10px;letter-spacing:.04em}#top .hero-discipline{margin-bottom:18px}
+ #top .career-title{font-size:clamp(26px,7vw,32px);line-height:1.25}#top .career-title span:not(:first-child){font-size:13px;line-height:1.6}.career-opportunity{padding:13px 15px}.career-opportunity strong{font-size:17px}.career-opportunity span:not(.career-label){font-size:11px}
+ .hero-actions{gap:7px}.hero-actions .button{font-size:11px;padding:10px 12px}#top .career-portrait-shell{height:330px;min-height:250px;padding:0 16px 0 0}
+ #projets .screen-selector{gap:21px;margin-bottom:22px}#projets .screen-selector button{font-size:12px}.screen-selector button{font-size:11px;padding:9px 12px}.screen-selector{scrollbar-width:thin;scrollbar-color:#ffffff66 transparent}
+ #projets article h3,#projets article h3 em,#projets article h3 span{font-size:34px}#projets article>p{font-size:13px;line-height:1.8}#projets .stack-chip{font-size:10px;padding:5px 7px}
+ #technologies .tech-group{padding:17px}.tech-filter{font-size:10px;padding:8px 11px}#certifications .certification-card{padding:19px;gap:10px 15px}#certifications .certification-card h3{font-size:16px}
+ #apropos .education{display:block}#apropos .education>.label{margin-bottom:24px}#apropos .education>*{grid-column:auto!important;grid-row:auto!important}#apropos .education h3{font-size:25px;margin:18px 0 12px}#apropos .education p{font-size:13px;margin-bottom:36px}
+ #engagements .engagement-grid article{padding:22px}#engagements .engagement-grid h3{font-size:24px}#contact h2{font-size:22px;line-height:1.7}#contact .contact-links{margin-top:30px}#contact .contact-links a{font-size:17px}
+ .screen-details{padding:22px}.story-player{border-radius:0}
+}
+@media(prefers-reduced-motion:reduce){.button,.certification-card,.screen-pager button,.tech-item{transition:none!important;transform:none!important}}
