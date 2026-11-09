@@ -32,6 +32,7 @@ footer{background:transparent!important;backdrop-filter:none;pointer-events:none
 .hero-field{display:block;font:500 12px/1.6 var(--portfolio-font);letter-spacing:.07em;color:#cc00ff}
 #top .career-title{font-size:clamp(28px,3.2vw,44px);font-weight:500;line-height:1.2;letter-spacing:-.025em;margin:0;color:#ffffff;text-transform:none}
 #top .career-title span{display:block}#top .career-title span:not(:first-child){font-size:16px;color:#ffffffb3;letter-spacing:0;font-weight:400;line-height:1.6}
+#top .career-title span:nth-child(2){color:#cc00ff}
 .career-opportunity{padding:17px 20px;border:1px solid #ffffff26;border-left:2px solid #cc00ff;border-radius:0 12px 12px 0;background:#000000;box-shadow:none}
 .career-opportunity .career-label{color:#cc00ff;font:500 10px/1.6 var(--portfolio-font);letter-spacing:.08em}
 .career-opportunity strong{color:#ffffff;font-size:19px;font-weight:500}.career-opportunity span:not(.career-label){color:#ffffffb3;font-size:12px}

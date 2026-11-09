@@ -51,7 +51,7 @@
     }
     const numbered = ['#projets','#technologies','#experience','#certifications','#apropos','#engagements','#contact'];
     numbered.forEach((selector,i)=>{const kicker=$(selector+' .kicker');if(kicker?.firstChild?.nodeType===3) kicker.firstChild.textContent=String(i+1).padStart(2,'0')+' — ';});
-    $('.hero-discipline').innerHTML = '<span class="hero-name">Salma Ihssan</span><span class="hero-field">Ingénierie Logiciel and AI</span>';
+    $('.hero-discipline').innerHTML = '<span class="hero-name">Salma Ihssan</span>';
     const careerTitle = $('.career-title');
     if (careerTitle) careerTitle.innerHTML = document.documentElement.lang === 'fr'
       ? '<span>École Centrale de Lyon</span><span>Élève-ingénieure en informatique · Intelligence artificielle &amp; génie logiciel</span><span>Promotion 2027</span>'
