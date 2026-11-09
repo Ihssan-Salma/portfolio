@@ -28,7 +28,7 @@ footer{background:transparent!important;backdrop-filter:none;pointer-events:none
 #top::after{content:none}
 #top .career-hero-intro{max-width:660px;gap:28px;align-self:center;position:relative;z-index:1}
 #top .hero-discipline{margin:0 0 24px;letter-spacing:0;text-transform:none;color:#cc00ff;line-height:1.2}
-.hero-name{display:block;font-size:clamp(36px,4vw,58px);font-weight:600;line-height:1.08;letter-spacing:-.055em;color:#ffffff;margin:0 0 14px}
+.hero-name{display:block;font-size:clamp(20px,2vw,28px);font-weight:400;line-height:1.08;letter-spacing:-.055em;color:#ffffff;margin:0 0 14px}
 .hero-field{display:block;font:500 12px/1.6 var(--portfolio-font);letter-spacing:.07em;color:#cc00ff}
 #top .career-title{font-size:clamp(28px,3.2vw,44px);font-weight:500;line-height:1.2;letter-spacing:-.025em;margin:0;color:#ffffff;text-transform:none}
 #top .career-title span{display:block}#top .career-title span:not(:first-child){font-size:16px;color:#ffffffb3;letter-spacing:0;font-weight:400;line-height:1.6}
@@ -97,12 +97,12 @@ footer{background:transparent!important;backdrop-filter:none;pointer-events:none
 .story-heading,.story-brand,.story-node strong{color:#ffffff}.story-node,.story-node-detail,.story-scene{background:#000000;color:#ffffffb3;border-color:#ffffff26}.story-node.is-active{border-color:#cc00ff;background:#cc00ff14}
 .story-controls button,.story-topbar button{background:#cc00ff14;color:#ffffffb3;border-color:#ffffff26}.story-caption,.story-hint{color:#ffffffb3}
 .story-screen{background:#000000;border-color:#ffffff26;color:#ffffffb3}.story-controls [data-story-play]{background:#cc00ff;color:#000000;border-color:#cc00ff}.story-topbar{background:#000000}
-@media(max-width:1000px){.site-header nav{gap:17px}#technologies .tech-groups{gap:12px}#technologies .tech-group{padding:15px}.hero-name{font-size:clamp(36px,4.8vw,48px)}#top{grid-template-columns:1.1fr .9fr}}
+@media(max-width:1000px){.site-header nav{gap:17px}#technologies .tech-groups{gap:12px}#technologies .tech-group{padding:15px}.hero-name{font-size:clamp(20px,2.5vw,26px)}#top{grid-template-columns:1.1fr .9fr}}
 @media(max-width:700px){
  .site-header{height:72px}.site-header nav{background:#000000;border:1px solid #ffffff26;border-radius:12px;box-shadow:0 20px 50px #0007}.site-header nav a{color:#ffffffb3;font-size:14px}.site-header nav a[aria-current=page]{color:#cc00ff}
  .site-header .menu-toggle,.site-header .language-toggle{font-size:12px;min-height:40px;padding:9px 13px}.screen-pager{right:16px;bottom:7px;gap:10px;font-size:10px}.screen-pager button{width:36px;height:33px}
  main#contenu>section{padding:18px 16px}#top{grid-template-columns:1fr;grid-template-rows:auto minmax(250px,1fr);gap:20px;padding-top:26px}#top .career-hero-intro{gap:22px;padding:0 16px 0 0}
- .hero-name{font-size:clamp(34px,9vw,46px);margin-bottom:12px}.hero-field{font-size:10px;letter-spacing:.04em}#top .hero-discipline{margin-bottom:18px}
+ .hero-name{font-size:clamp(18px,4.5vw,24px);margin-bottom:12px}.hero-field{font-size:10px;letter-spacing:.04em}#top .hero-discipline{margin-bottom:18px}
  #top .career-title{font-size:clamp(26px,7vw,32px);line-height:1.25}#top .career-title span:not(:first-child){font-size:13px;line-height:1.6}.career-opportunity{padding:13px 15px}.career-opportunity strong{font-size:17px}.career-opportunity span:not(.career-label){font-size:11px}
  .hero-actions{gap:7px}.hero-actions .button{font-size:11px;padding:10px 12px}#top .career-portrait-shell{height:330px;min-height:250px;padding:0 16px 0 0}
  #projets .screen-selector{gap:21px;margin-bottom:22px}#projets .screen-selector button{font-size:12px}.screen-selector button{font-size:11px;padding:9px 12px}.screen-selector{scrollbar-width:thin;scrollbar-color:#ffffff66 transparent}
