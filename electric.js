@@ -54,8 +54,8 @@
     $('.hero-discipline').innerHTML = '<span class="hero-name">Salma Ihssan</span><span class="hero-field">Ingénierie Logiciel and AI</span>';
     const careerTitle = $('.career-title');
     if (careerTitle) careerTitle.innerHTML = document.documentElement.lang === 'fr'
-      ? '<span>École Centrale de Lyon</span><span>Cycle ingénieur · Master 2 Intelligence Artificielle</span><span>Promotion 2027</span>'
-      : '<span>École Centrale de Lyon</span><span>Engineering degree · Master 2 Artificial Intelligence</span><span>Class of 2027</span>';
+      ? '<span>École Centrale de Lyon</span><span>Élève-ingénieure en informatique · Intelligence artificielle &amp; génie logiciel</span><span>Promotion 2027</span>'
+      : '<span>École Centrale de Lyon</span><span>Computer engineering student · Artificial intelligence &amp; software engineering</span><span>Class of 2027</span>';
     if ($('.studio-signature')) $('.studio-signature').textContent = t('L’esprit derrière les systèmes.', 'The mind behind the systems.');
     $$('.signal-strip span').forEach((el, i) => { el.textContent = [t('Ingénierie IA', 'AI engineering'), t('Workflows agentiques', 'Agentic workflows'), t('Génie logiciel', 'Software engineering'), t('Données & évaluation', 'Data & evaluation')][i]; });
     $$('.project-card .project-meta span:first-child').forEach((el, i) => { if (i === 0) el.textContent = t('Apprentissage profond · Vision par ordinateur', 'Deep learning · Computer vision'); if (i === 3) el.textContent = t('Projet d’équipe académique', 'Academic team project'); });

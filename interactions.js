@@ -195,8 +195,8 @@
       const index = languageIndex();
       const title = careerMap.closest('.career-hero')?.querySelector('.career-title');
       if (title) title.innerHTML = index === 0
-        ? '<span>École Centrale de Lyon</span><span>Cycle ingénieur · Master 2 Intelligence Artificielle</span><span>Promotion 2027</span>'
-        : '<span>École Centrale de Lyon</span><span>Engineering degree · Master 2 Artificial Intelligence</span><span>Class of 2027</span>';
+        ? '<span>École Centrale de Lyon</span><span>Élève-ingénieure en informatique · Intelligence artificielle &amp; génie logiciel</span><span>Promotion 2027</span>'
+        : '<span>École Centrale de Lyon</span><span>Computer engineering student · Artificial intelligence &amp; software engineering</span><span>Class of 2027</span>';
       const opportunity = document.querySelector('#career-opportunity');
       if (opportunity) {
         opportunity.querySelector('.career-label').textContent = index === 0 ? 'Prochaine mission' : 'Next opportunity';
